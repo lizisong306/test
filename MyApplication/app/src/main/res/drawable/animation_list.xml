@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false"
+    >
+    <item android:drawable="@mipmap/log1" android:duration="30" />
+    <item android:drawable="@mipmap/log2" android:duration="30" />
+    <item android:drawable="@mipmap/log3" android:duration="30" />
+    <item android:drawable="@mipmap/log4" android:duration="30" />
+    <item android:drawable="@mipmap/log5" android:duration="30" />
+    <item android:drawable="@mipmap/log6" android:duration="30" />
+    <item android:drawable="@mipmap/log7" android:duration="30" />
+    <item android:drawable="@mipmap/log8" android:duration="30" />
+    <item android:drawable="@mipmap/log9" android:duration="30" />
+    <item android:drawable="@mipmap/log10" android:duration="30" />
+
+    <item android:drawable="@mipmap/log11" android:duration="30" />
+    <item android:drawable="@mipmap/log12" android:duration="30" />
+    <item android:drawable="@mipmap/log13" android:duration="30" />
+    <item android:drawable="@mipmap/log14" android:duration="30" />
+    <item android:drawable="@mipmap/log15" android:duration="30" />
+    <item android:drawable="@mipmap/log16" android:duration="30" />
+    <item android:drawable="@mipmap/log17" android:duration="30" />
+    <item android:drawable="@mipmap/log18" android:duration="30" />
+
+    <item android:drawable="@mipmap/log19" android:duration="30" />
+    <item android:drawable="@mipmap/log20" android:duration="30" />
+    <item android:drawable="@mipmap/log21" android:duration="30" />
+    <item android:drawable="@mipmap/log22" android:duration="30" />
+    <item android:drawable="@mipmap/log23" android:duration="30" />
+    <item android:drawable="@mipmap/log24" android:duration="30" />
+
+    <item android:drawable="@mipmap/log25" android:duration="30" />
+    <item android:drawable="@mipmap/log26" android:duration="30" />
+    <item android:drawable="@mipmap/log27" android:duration="30" />
+    <item android:drawable="@mipmap/log28" android:duration="30" />
+    <item android:drawable="@mipmap/log29" android:duration="30" />
+    <item android:drawable="@mipmap/log30" android:duration="30" />
+    <item android:drawable="@mipmap/log31" android:duration="30" />
+
+    <item android:drawable="@mipmap/log32" android:duration="30" />
+    <item android:drawable="@mipmap/log33" android:duration="30" />
+    <item android:drawable="@mipmap/log34" android:duration="30" />
+    <item android:drawable="@mipmap/log35" android:duration="30" />
+    <item android:drawable="@mipmap/log36" android:duration="30" />
+    <item android:drawable="@mipmap/log37" android:duration="30" />
+    <item android:drawable="@mipmap/log38" android:duration="30" />
+    <item android:drawable="@mipmap/log39" android:duration="30" />
+    <item android:drawable="@mipmap/log40" android:duration="30" />
+    <item android:drawable="@mipmap/log41" android:duration="30" />
+    <item android:drawable="@mipmap/log42" android:duration="30" />
+    <item android:drawable="@mipmap/log43" android:duration="30" />
+    <item android:drawable="@mipmap/log44" android:duration="30" />
+    <item android:drawable="@mipmap/log45" android:duration="30" />
+    <item android:drawable="@mipmap/log46" android:duration="30" />
+    <item android:drawable="@mipmap/log47" android:duration="30" />
+    <item android:drawable="@mipmap/log48" android:duration="30" />
+    <item android:drawable="@mipmap/log49" android:duration="30" />
+    <item android:drawable="@mipmap/log50" android:duration="30" />
+    <item android:drawable="@mipmap/log51" android:duration="30" />
+    <item android:drawable="@mipmap/log52" android:duration="30" />
+    <item android:drawable="@mipmap/log53" android:duration="30" />
+    <item android:drawable="@mipmap/log54" android:duration="30" />
+    <item android:drawable="@mipmap/log55" android:duration="30" />
+    <item android:drawable="@mipmap/log56" android:duration="30" />
+    <item android:drawable="@mipmap/log57" android:duration="30" />
+    <item android:drawable="@mipmap/log58" android:duration="30" />
+    <item android:drawable="@mipmap/log59" android:duration="30" />
+    <item android:drawable="@mipmap/log60" android:duration="30" />
+
+    <item android:drawable="@mipmap/log61" android:duration="30" />
+    <item android:drawable="@mipmap/log62" android:duration="30" />
+    <item android:drawable="@mipmap/log63" android:duration="30" />
+    <item android:drawable="@mipmap/log64" android:duration="30" />
+    <item android:drawable="@mipmap/log65" android:duration="30" />
+    <item android:drawable="@mipmap/log66" android:duration="30" />
+    <item android:drawable="@mipmap/log67" android:duration="30" />
+    <item android:drawable="@mipmap/log68" android:duration="30" />
+    <item android:drawable="@mipmap/log69" android:duration="30" />
+    <item android:drawable="@mipmap/log70" android:duration="30" />
+
+    <item android:drawable="@mipmap/log71" android:duration="30" />
+    <item android:drawable="@mipmap/log72" android:duration="30" />
+    <item android:drawable="@mipmap/log73" android:duration="30" />
+    <item android:drawable="@mipmap/log74" android:duration="30" />
+    <item android:drawable="@mipmap/log75" android:duration="30" />
+    <item android:drawable="@mipmap/log76" android:duration="30" />
+    <item android:drawable="@mipmap/log77" android:duration="30" />
+    <item android:drawable="@mipmap/log78" android:duration="30" />
+    <item android:drawable="@mipmap/log79" android:duration="30" />
+    <item android:drawable="@mipmap/log80" android:duration="30" />
+
+    <item android:drawable="@mipmap/log81" android:duration="30" />
+    <item android:drawable="@mipmap/log82" android:duration="30" />
+    <item android:drawable="@mipmap/log83" android:duration="30" />
+    <item android:drawable="@mipmap/log84" android:duration="30" />
+    <item android:drawable="@mipmap/log85" android:duration="30" />
+    <item android:drawable="@mipmap/log86" android:duration="30" />
+    <item android:drawable="@mipmap/log87" android:duration="30" />
+    <item android:drawable="@mipmap/log88" android:duration="30" />
+    <item android:drawable="@mipmap/log89" android:duration="30" />
+    <item android:drawable="@mipmap/log90" android:duration="30" />
+
+    <item android:drawable="@mipmap/log91" android:duration="30" />
+    <item android:drawable="@mipmap/log92" android:duration="30" />
+    <item android:drawable="@mipmap/log93" android:duration="30" />
+    <item android:drawable="@mipmap/log94" android:duration="30" />
+    <item android:drawable="@mipmap/log95" android:duration="30" />
+    <item android:drawable="@mipmap/log96" android:duration="30" />
+    <item android:drawable="@mipmap/log97" android:duration="30" />
+    <item android:drawable="@mipmap/log98" android:duration="30" />
+    <item android:drawable="@mipmap/log99" android:duration="30" />
+    <item android:drawable="@mipmap/log100" android:duration="30" />
+
+    <item android:drawable="@mipmap/log101" android:duration="30" />
+    <item android:drawable="@mipmap/log102" android:duration="30" />
+    <item android:drawable="@mipmap/log103" android:duration="30" />
+    <item android:drawable="@mipmap/log104" android:duration="30" />
+    <item android:drawable="@mipmap/log105" android:duration="30" />
+    <item android:drawable="@mipmap/log106" android:duration="30" />
+    <item android:drawable="@mipmap/log107" android:duration="30" />
+    <item android:drawable="@mipmap/log108" android:duration="30" />
+    <item android:drawable="@mipmap/log109" android:duration="30" />
+    <item android:drawable="@mipmap/log110" android:duration="30" />
+
+    <item android:drawable="@mipmap/log111" android:duration="30" />
+    <item android:drawable="@mipmap/log112" android:duration="30" />
+    <item android:drawable="@mipmap/log113" android:duration="30" />
+    <item android:drawable="@mipmap/log114" android:duration="30" />
+    <item android:drawable="@mipmap/log115" android:duration="30" />
+    <item android:drawable="@mipmap/log116" android:duration="30" />
+    <item android:drawable="@mipmap/log117" android:duration="30" />
+    <item android:drawable="@mipmap/log118" android:duration="30" />
+    <item android:drawable="@mipmap/log119" android:duration="30" />
+    <item android:drawable="@mipmap/log120" android:duration="30" />
+
+</animation-list>

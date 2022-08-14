@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:gravity="center_horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="@color/whrite"
+            >
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/forget_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/back"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="忘记密码"
+                android:layout_centerInParent="true"
+                android:textColor="@color/title_head"
+                android:textSize="@dimen/biaoti"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/yanzheng_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="70px"
+        android:hint="+86 请输入您的手机号"
+        android:textSize="28px"
+        android:textColor="@color/title"
+        android:paddingLeft="16px"
+        android:layout_marginLeft="19px"
+        android:layout_marginRight="19px"
+        android:background="@drawable/denglu"
+        android:gravity="left|center"
+        android:inputType="number"
+        android:layout_marginTop="19px"
+        android:digits="@string/filter_vcode"
+        android:textColorHint="@color/title"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="19px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginLeft="19px"
+        android:layout_marginRight="19px">
+
+        <EditText
+            android:id="@+id/yz_m"
+            android:layout_width="wrap_content"
+            android:layout_height="70px"
+            android:hint="请输入验证码"
+            android:textSize="28px"
+            android:textColor="@color/title"
+            android:textColorHint="@color/title"
+            android:paddingLeft="16px"
+
+            android:background="@drawable/denglu"
+            android:inputType="number"
+            android:layout_weight="10"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="3"
+            android:gravity="center">
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/anniu"
+                android:layout_width="200px"
+                android:layout_height="70px"
+                android:text="获取验证码"
+                android:textSize="28px"
+                android:background="@drawable/logins"
+                android:textColor="@color/whrite"
+                android:layout_marginLeft="24px"
+                android:gravity="center"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:layout_marginLeft="19px"
+        android:layout_marginRight="19px"
+        android:id="@+id/phone_next"
+        android:layout_marginTop="30px"
+        android:layout_width="wrap_content"
+        android:layout_height="70px"
+        android:background="@drawable/logins"
+        android:text="下一步"
+        android:textSize="30px"
+        android:textColor="@color/white"
+
+        />
+
+
+
+</com.chenantao.autolayout.AutoLinearLayout>

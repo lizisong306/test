@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/detail_ra"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:Android="http://schemas.android.com/tools"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:clipToPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="@color/white"
+            >
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/sanfan_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/guanbi"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关联手机号"
+                android:layout_centerInParent="true"
+                android:textColor="@color/title"
+                android:textSize="@dimen/biaoti"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.1px"
+            android:background="@color/lines"
+            />
+    </LinearLayout>
+
+    <EditText
+        android:layout_marginLeft="19px"
+        android:layout_marginRight="19px"
+        android:id="@+id/safan_phone"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:hint="请输入手机号"
+        android:textSize="28px"
+        android:textColor="@color/title"
+        android:paddingLeft="16px"
+        android:background="@mipmap/shurukuang"
+        android:gravity="left|center"
+        android:layout_marginTop="80px"
+        android:textColorHint="@color/title"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19px"
+        android:layout_marginRight="19px"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/sanfan_name"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="70px"
+            android:hint="请输入验证码"
+            android:textSize="28px"
+            android:textColor="@color/title"
+            android:paddingLeft="16px"
+            android:background="@mipmap/yanzhengmashurukaung"
+            android:gravity="left|center"
+            android:inputType="number"
+            android:layout_marginTop="40px"
+            android:textColorHint="@color/title"
+            />
+        <TextView
+            android:layout_weight="2"
+            android:layout_marginTop="40px"
+            android:layout_width="match_parent"
+            android:layout_height="70px"
+            android:text="获取验证码"
+            android:background="@mipmap/yanzhengma"
+            android:textSize="28px"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:paddingLeft="16px"
+            android:id="@+id/sanfan_code" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginLeft="19px"
+        android:layout_marginRight="19px"
+        android:id="@+id/sanfan_nexts"
+        android:layout_marginTop="80px"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:background="@drawable/logins"
+        android:text="完成"
+        android:textSize="30px"
+        android:textColor="@color/white"
+        android:gravity="center"
+
+        />
+
+</LinearLayout>

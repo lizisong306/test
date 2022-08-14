@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/whrite"
+        >
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/feed_backs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/back"
+
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="意见反馈"
+            android:layout_centerInParent="true"
+            android:textColor="@color/title_head"
+            android:textSize="@dimen/biaoti"/>
+
+
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/mobil_txt"
+        android:layout_marginTop="19px"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="19px"
+        android:layout_marginRight="19px"
+        android:layout_width="wrap_content"
+        android:layout_height="70px"
+        android:hint="请留下您的联系方式"
+        android:textSize="26px"
+
+        android:background="@drawable/denglu"
+        android:textColor="#969696"
+        android:textCursorDrawable="@drawable/edit_cursor_color"
+        android:textColorHint="#969696"
+        android:inputType="number"
+        android:drawablePadding="15px"
+        android:digits="@string/filter_vcode"
+        android:paddingLeft="15px"
+        />
+    <EditText
+        android:id="@+id/question_txt"
+        android:layout_marginTop="19px"
+        android:gravity="top"
+       android:paddingTop="19px"
+        android:layout_marginLeft="19px"
+        android:layout_marginRight="19px"
+        android:layout_width="wrap_content"
+        android:layout_height="280px"
+        android:hint="请输入问题或意见"
+        android:textSize="26px"
+        android:background="@drawable/question"
+        android:textColor="#969696"
+        android:textCursorDrawable="@drawable/edit_cursor_color"
+        android:textColorHint="#969696"
+        android:drawablePadding="15px"
+        android:paddingLeft="15px"
+
+        />
+    <Button
+        android:layout_marginLeft="19px"
+        android:layout_marginRight="19px"
+        android:id="@+id/bt_submit"
+        android:layout_marginTop="30px"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:background="@drawable/logins"
+        android:text="提交"
+        android:textSize="30px"
+        android:textColor="@color/white"
+        android:gravity="center"
+
+        />
+
+</LinearLayout>

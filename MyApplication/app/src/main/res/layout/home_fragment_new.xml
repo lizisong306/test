@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    app:layout_auto_baseheight="width"
+    app:layout_auto_basewidth="height">
+    <view.RefreshListView
+        android:id="@+id/listview"
+        style="@style/listview_style"
+        addHeader="true"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        />
+    <RelativeLayout
+        android:id="@+id/la"
+        android:visibility="visible"
+        android:layout_alignParentTop="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <TextView
+            android:id="@+id/tip"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tip"
+            android:visibility="visible"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/dingwei_id"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/miandiantoutiaoicon2"
+            />
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_below="@+id/la"
+        android:id="@+id/yingyin"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/img"
+        />
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progress"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/animation_list" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pop"
+        android:visibility="gone"
+        android:background="#88000000" >
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/nodata"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/firstnodata"
+        android:layout_centerInParent="true"
+        />
+
+</com.chenantao.autolayout.AutoRelativeLayout>

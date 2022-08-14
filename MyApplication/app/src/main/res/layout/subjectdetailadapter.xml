@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:fitsSystemWindows="true"
+    android:background="#f6f6f6"
+    android:clipToPadding="true">
+    <!--授权成功-->
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/neirong"
+        >
+        <TextView
+            android:id="@+id/neirongtime"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  1小时前"
+            android:textSize="11sp"
+            android:textColor="@color/text_gray"
+
+            />
+        <LinearLayout
+            android:layout_marginTop="3dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/shap_round"
+            >
+            <TextView
+                android:id="@+id/neirongtitle"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#5b9dff"
+                android:text="授权成功"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:drawableLeft="@mipmap/juxingtubiao"
+                android:drawablePadding="5dp"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.5px"
+                android:background="@color/lines"
+                />
+            <TextView
+                android:id="@+id/neirongcontent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="授权成功信息（后台填写）我的萨克的萨克你打开"
+                android:textColor="#181818"
+                android:textSize="13sp"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <!--授权-->
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/shouquan"
+        >
+        <TextView
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/shouquantime"
+            android:text="  1小时前"
+            android:textSize="11sp"
+            android:textColor="@color/text_gray"
+
+            />
+        <LinearLayout
+            android:layout_marginTop="3dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/shap_round"
+            >
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#5b9dff"
+                android:id="@+id/shouquanchenggong"
+                android:text="授权成功"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:drawableLeft="@mipmap/juxingtubiao"
+                android:drawablePadding="5dp"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.5px"
+                android:background="@color/lines"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp">
+                <TextView
+                    android:id="@+id/shengbao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="申请材料："
+                    android:textColor="#181818"
+                    android:textSize="13sp"
+                    />
+                <TextView
+                    android:id="@+id/shengbaocailiao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="专利申请资料"
+                    android:textColor="#7dbaff"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <!--去支付-->
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/pay"
+        android:visibility="gone"
+        >
+        <TextView
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  1小时前"
+            android:textSize="11sp"
+            android:id="@+id/paytime"
+            android:textColor="@color/text_gray"
+
+            />
+        <LinearLayout
+            android:layout_marginTop="3dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/shap_round"
+            >
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/jiaoguanfei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#181818"
+                    android:text="请缴纳官费："
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@mipmap/juxingtubiao"
+                    android:drawablePadding="5dp"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:id="@+id/jiaoguanfeizhekou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#3385ff"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:text="800（已减免50%）"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.5px"
+                android:background="@color/lines"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:layout_marginBottom="15dp">
+                <TextView
+                    android:id="@+id/pay_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="去支付"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textColor="#5b9dff"
+                    android:textSize="11sp"
+                    android:background="@drawable/shap_blue"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</com.chenantao.autolayout.AutoRelativeLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="#F6F6F6"
+    android:clipToPadding="true"
+    >
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:id="@+id/titlecontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="需求详情"
+                android:layout_centerInParent="true"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/biaoti"/>
+            <ImageView
+                android:visibility="visible"
+                android:id="@+id/need_add"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="37px"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/xuanxiang"
+                android:layout_marginRight="24px"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/about_backs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/back"
+                android:visibility="visible"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView
+        android:visibility="visible"
+        android:layout_below="@+id/title"
+        android:layout_width="1024dp"
+        android:layout_height="0.5px"
+        android:background="@color/lines"/>
+
+    <view.RefreshListView
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/title"
+        android:id="@+id/listview"
+        style="@style/listview_style1"
+        addHeader="true"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        />
+
+    <LinearLayout
+        android:id="@+id/more_info"
+        android:layout_below="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@mipmap/xuanxiangbg"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginRight="24px"
+        >
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/add_xuqiu"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="18dp"
+            android:text="  添加需求"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:drawableLeft="@mipmap/addtianjia"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:background="@color/lines"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            />
+        <TextView
+            android:id="@+id/add_cenel"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="18dp"
+            android:text="  取    消"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:drawableLeft="@mipmap/addquxiao"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:background="@color/lines"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            />
+        <TextView
+            android:id="@+id/add_kefu"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="18dp"
+            android:text="  联系客服"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:drawableLeft="@mipmap/addkefu"
+            />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progress"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/animation_list" />
+
+
+</com.chenantao.autolayout.AutoRelativeLayout>

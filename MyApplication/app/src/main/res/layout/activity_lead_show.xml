@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_auto_basewidth="height"
+    android:gravity="center"
+    app:layout_auto_baseheight="width">
+     <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/lead_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/lead1"
+        />
+    <ImageView
+        android:id="@+id/wenzi"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/lead_show"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/zi1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        />
+    <ImageView
+        android:layout_marginTop="70dp"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/wenzi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/bottmon"
+        android:src="@mipmap/jindu1"
+
+        />
+
+</RelativeLayout>
+</com.chenantao.autolayout.AutoLinearLayout>

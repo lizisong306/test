@@ -1,0 +1,54 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="eight">6px</dimen>
+    <dimen name="title_padding_top">25dp</dimen>
+    <dimen name="title_padding_top1">25dp</dimen>
+    <!-- 标题的paddingTop值 -->
+
+    <dimen name="twelve">12px</dimen>
+    <dimen name="sixteen">16px</dimen>
+    <dimen name="eighteen">10px</dimen>
+    <dimen name="toolbar_height">25px</dimen>
+    <dimen name="hangjianju">20px</dimen>
+    <dimen name="content">16sp</dimen>
+
+    <dimen name="popupwindow_content_width">120dp</dimen>
+    <dimen name="popupwindow_menu_item_height">45dp</dimen>
+    <dimen name="popupwindow_menu_item_divider_height">1px</dimen>
+
+    <dimen name="twenty_four">27px</dimen>
+    <dimen name="twenty_six">26px</dimen>
+    <dimen name="twenty_eight">28px</dimen>
+    <dimen name="askinfo_bg_radius">6dp</dimen>
+    <dimen name="askinfo_text_size">18dp</dimen>
+    <dimen name="askinfo_content_marginLeft">12dp</dimen>
+    <dimen name="dialog_width">300dp</dimen>
+    <dimen name="askinfo_content_marginTop">15dp</dimen>
+    <dimen name="askinfo_btn_padding">10dp</dimen>
+    <dimen name="fifty">50px</dimen>
+    <dimen name="fifty_two">65px</dimen>
+    <dimen name="sixty">60px</dimen>
+    <dimen name="sixty_large">999px</dimen>
+    <!-- 列表的参数 -->
+    <dimen name="list_diver_height">0px</dimen>
+    <!-- 标题的高度 -->
+    <dimen name="title_height">73dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="title">12sp</dimen>
+    <dimen name="biaoti">18sp</dimen>
+    <dimen name="biaoti1">15sp</dimen>
+    <dimen name="mineheight">47dp</dimen>
+
+    <dimen name="thumnail_default_width">100dip</dimen>
+    <dimen name="thumnail_default_height">100dip</dimen>
+
+    <dimen name="button_text_size">14sp</dimen>
+    <dimen name="expand_tab_item_height">45dp</dimen>
+    <dimen name="expand_tab_eara_height">380dp</dimen>
+    <dimen name="head_bar_height">45dp</dimen>
+    <dimen name="three_grid_unit">24dp</dimen>
+    <dimen name="one_and_a_half_grid_unit">12dp</dimen>
+</resources>

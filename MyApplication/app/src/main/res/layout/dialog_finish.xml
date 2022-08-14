@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="115dp"
+    android:orientation="vertical"
+    android:background="@drawable/shape"
+    android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交成功"
+        android:textColor="@color/title"
+        android:textSize="15dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/title"
+        android:gravity="center_horizontal"
+        android:textSize="15dp"
+        android:text="小脉会在24小时内联系您，耐心等候呦！"/>
+    <TextView
+        android:layout_marginTop="25px"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/huixian"/>
+
+    <TextView
+
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="17dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#00aced"
+        android:text="预约成功"
+        android:id="@+id/textView2" />
+
+</LinearLayout>

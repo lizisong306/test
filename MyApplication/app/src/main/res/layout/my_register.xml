@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:clipToPadding="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="@color/whrite"
+            >
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/zhuce_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/back"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="注册"
+                android:layout_centerInParent="true"
+                android:textColor="@color/title_head"
+                android:textSize="@dimen/biaoti"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+    <EditText
+        android:layout_marginLeft="19px"
+        android:layout_marginRight="19px"
+        android:id="@+id/register_name"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:hint="请输入手机号"
+        android:textSize="28px"
+        android:textColor="@color/title"
+        android:paddingLeft="16px"
+        android:background="@mipmap/shurukuang"
+        android:gravity="left|center"
+        android:layout_marginTop="19dp"
+        android:textColorHint="@color/title"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19px"
+        android:layout_marginRight="19px"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/code_name"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="70px"
+            android:hint="请输入验证码"
+            android:textSize="28px"
+            android:textColor="@color/title"
+            android:paddingLeft="16px"
+            android:background="@mipmap/yanzhengmashurukaung"
+            android:gravity="left|center"
+            android:inputType="number"
+            android:layout_marginTop="19px"
+            android:textColorHint="@color/title"
+            />
+        <TextView
+            android:layout_weight="2"
+            android:layout_marginTop="19px"
+            android:layout_width="match_parent"
+            android:layout_height="70px"
+            android:text="获取验证码"
+            android:background="@mipmap/yanzhengma"
+            android:textSize="28px"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:paddingLeft="16px"
+            android:id="@+id/get_code" />
+
+    </LinearLayout>
+    <EditText
+        android:layout_marginLeft="19px"
+        android:layout_marginRight="19px"
+        android:id="@+id/register_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:hint="设置密码 (大于6位的字母和数字)"
+        android:textSize="28px"
+        android:textColor="@color/title"
+        android:paddingLeft="16px"
+        android:background="@mipmap/shurukuang"
+        android:gravity="left|center"
+        android:inputType="textPassword"
+        android:layout_marginTop="19px"
+        android:textColorHint="@color/title"
+        />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15px"
+        android:gravity="center_vertical"
+       >
+
+        <CheckBox
+            android:layout_width="35px"
+            android:layout_height="35px"
+           android:button="@null"
+            android:background="@drawable/check"
+           android:layout_marginRight="19px"
+            android:id="@+id/checkBox" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我已阅读并同意"
+            android:textSize="22px"
+            android:textColor="@color/colortitle"/>
+        <TextView
+            android:id="@+id/maidiankeji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22px"
+            android:text="《钛领科技服务条款》"
+            android:textColor="#00ACED"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_marginLeft="19px"
+        android:layout_marginRight="19px"
+        android:id="@+id/register_nexts"
+        android:layout_marginTop="15px"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:background="@drawable/logins"
+        android:text="立即注册"
+        android:textSize="30px"
+        android:textColor="@color/white"
+        android:gravity="center"
+
+        />
+
+
+</com.chenantao.autolayout.AutoLinearLayout>

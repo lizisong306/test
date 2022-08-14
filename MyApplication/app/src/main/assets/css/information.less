@@ -1,0 +1,232 @@
+// 公共样式
+@import url("m_reset.css");
+.full(@w,@h,@b){
+	width:@w;
+	height:@h;
+	background: @b;
+	
+}
+
+html,body,.container{
+	.full(100%,100%,#ffffff);
+	// background:#ffffff;
+	font-size:62.5%;
+	li{
+		list-style:none;
+	}
+}
+/*320px布局*/
+html{font-size: 100px;}
+body{font-size: 0.14rem /*实际相当于14px*/}
+
+/* iphone 6 */
+@media (min-device-width : 375px) and (max-device-width : 667px) and (-webkit-min-device-pixel-ratio : 2){
+    html{font-size: 117.1875px;}
+}
+/* iphone6 plus */
+@media (min-device-width : 414px) and (max-device-width : 736px) and (-webkit-min-device-pixel-ratio : 3){
+    html{font-size: 129.375px;}
+}
+
+
+.r{
+	position:relative;
+}
+.a{
+	position:absolute;
+}
+.f{
+	position:fixed;
+}
+.b{
+	-webkit-box-sizing:border-box;
+}
+.header{
+	.r;
+	width:100%;
+	height:auto;
+	
+}
+.img1{
+	width:100%;
+	height:auto;
+	display:block;
+}
+// 资讯按钮
+.information{
+	.a;
+	bottom:-3rem;
+	left:6%;
+	width:22%;
+	// height: 10%;
+	border-radius: 1rem;
+	background:#00aced;
+	font-size: 3rem;
+	color:#fff;
+	text-align: center;
+	padding-top:1rem;
+	padding-bottom:1rem;
+}
+// 标题
+.title{
+	width: 100%;
+	height:auto;
+	p{
+		width:88%;
+		height:auto;
+		margin:0 auto;
+		margin-top: 8rem;
+		font-size:4.6rem;
+	}
+}
+// 时间
+.time{
+	width:100%;
+	height:auto;
+	p{
+		width:88%;
+		height: auto;
+		margin:0 auto;
+		margin-top: 2.6rem;
+	}
+	span{
+		// width:88%;
+		// height:auto;
+		
+		color:#bbbbbb;
+		font-size:2.4rem;
+		display: block;
+
+		float:left;
+		
+	}	
+	em{
+		width:1.6rem;
+		height:1.6rem;
+		margin-right:1.4rem;
+		background: #00aced;
+		display: block;
+		float:left;
+		margin-top:1rem;
+		border-radius:1rem;
+	}
+}
+// 编者按
+.note{
+	width:88%;
+	height:auto;
+	margin:0 auto;
+}
+.note-word{
+	font-size:4rem;
+	color: #fecb5f;
+	margin-top:4rem;
+	font-weight:bold;
+}
+.to-write{
+	width:90%;
+	height:auto;
+	margin:0 auto;
+	background: #eeeeee;
+	font-size:3.3rem;
+	padding-top: 3rem;
+	padding-bottom:3rem;
+	color:#3e3e3e;
+	padding-left:3rem;
+	padding-right:3rem;
+	border-radius:1.6rem;
+	margin-top:3rem;
+	line-height:5.5rem;
+}
+// 主体
+.body{
+	width: 100%;
+	height:auto;
+	// margin-top:2rem;
+	margin-bottom:8rem;
+	p{
+		width:88%;
+		height:auto;
+		line-height:5.5rem;
+		font-size: 3.3rem;
+		margin:0 auto;
+		padding-top:5rem;
+		text-align: justify;
+		color:#7c7c7c;
+	}
+	img{
+		width:100%;
+		height:auto;
+		padding-top:5rem;
+		// padding-top:4rem;
+	}
+}
+// 相关解读
+.read{
+	width:100%;
+	height:auto;
+	margin-top:8rem;
+}
+.block{
+	width:1.6rem;
+	height:3.6rem;
+	background: #00aced;
+	float:left;
+	margin-top:1.5%;
+	margin-right: 3%;
+}
+.read-word{
+	float:left;
+	font-size: 4rem;
+	font-weight:bold;
+}
+// 相关内容
+.read-container{
+	width:100%;
+	height:auto;
+	margin-top: 3rem;
+	// margin-bottom: 8rem;
+	a{
+		color:#000;
+	}
+	dl{
+		width: 100%;
+		height:auto;
+		background:#eeeeee;
+		border-bottom:3px solid #dddddd;
+	}
+	dt{
+		width: 42%;
+		// height: 23rem;
+		// background:red;
+		float:left;
+		padding-top: 2.6rem;
+		padding-bottom:2.6rem;
+		img{
+			width:85%;
+			height:auto;
+			display:block;
+			margin:0 auto;
+		}
+	}
+	dd{
+		width: 54.7%;
+		// height: 23rem;
+		// background:green;
+		float:left;
+		font-size:3.3rem;
+		// padding-right:1%;
+		padding-top: 2rem;
+		padding-right:2.3%;
+		padding-left:1%;
+
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+		overflow: hidden;
+	}
+}
+.main{
+	margin-bottom:8rem;
+}
+

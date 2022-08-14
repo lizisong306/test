@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="#fefdfb"
+    app:layout_auto_baseheight="width"
+    app:layout_auto_basewidth="height">
+    <ImageView
+        android:id="@+id/heart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/shenhezhong"
+        />
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:id="@+id/back"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/back"
+        />
+    <TextView
+        android:id="@+id/phone"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="客服电话"
+        android:drawablePadding="5dp"
+        android:layout_marginRight="19dp"
+        android:textColor="#3e3e3e"
+        android:drawableRight="@mipmap/heisedianhua"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/des"
+        android:layout_below="@+id/shenghetongguo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="17dp"
+        android:text="如有疑问可直接和我们联系！"
+        android:textColor="#181818"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/shenghetongguo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:layout_marginTop="53dp"
+        android:text="申请审核中"
+        android:textColor="#c3a05d"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_below="@+id/heart"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</com.chenantao.autolayout.AutoRelativeLayout>

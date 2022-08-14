@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <com.chenantao.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:gravity="center_horizontal"
+    android:background="@color/whrite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/whrite"
+        >
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/modify_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/back"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="昵称"
+            android:layout_centerInParent="true"
+            android:textColor="@color/title"
+            android:textSize="@dimen/biaoti"/>
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:background="@color/lines"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_marginTop="29px"
+
+        android:layout_width="175dp"
+        android:layout_height="80px"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        >
+        <RelativeLayout
+            android:id="@+id/rlSearchFrameDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_weight="30"
+
+            >
+            <AutoCompleteTextView
+                android:textCursorDrawable="@drawable/edit_cursor_color"
+                android:singleLine="true"
+                android:imeOptions="actionSearch"
+                android:popupBackground="@null"
+                style="@style/AutoCompleteStyle"
+                android:id="@+id/name_search"
+                android:layout_width="match_parent"
+                android:paddingTop="15dp"
+                android:layout_height="match_parent"
+                 android:background="@null"
+                android:focusable="true"
+                android:text="昵称"
+                android:layout_marginLeft="12px"
+               android:gravity="center"
+                android:textSize="25px"
+                android:completionThreshold="1"
+                android:textColorHint="#a7a7a7"
+                android:textColor="#666666"
+
+                />
+            <ImageView
+
+                android:id="@+id/name_ivDeleteText"
+                android:layout_width="wrap_content"
+                android:paddingTop="15dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/search_delete"
+                android:layout_centerInParent="true"
+                android:paddingRight="10px"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView
+
+        android:layout_width="175dp"
+        android:layout_height="1dp"
+        android:background="@color/lines"/>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:gravity="bottom|center"
+
+
+        >
+
+        <Button
+
+            android:gravity="center"
+            android:id="@+id/info_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lansecolor"
+
+            android:text="完成"
+            android:textColor="#ffffff"
+            android:textSize="30px"/>
+
+    </LinearLayout>
+</com.chenantao.autolayout.AutoLinearLayout>

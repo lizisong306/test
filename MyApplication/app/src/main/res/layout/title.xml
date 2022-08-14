@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoRelativeLayout
+    android:id="@+id/bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/showname"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="dkfdkfkdsfdfdkfdkfdfjdfkdfkdfk"
+        android:textSize="14sp"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="15dp"
+        android:textColor="@color/qianyanse"
+        />
+
+</com.chenantao.autolayout.AutoRelativeLayout>

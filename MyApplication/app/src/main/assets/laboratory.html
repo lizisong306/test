@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>实验室</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="viewport"
+	    content="width=device-width,initial-scale=1,user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<!--  上传新的css样式  -->
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/laboratory.css">
+	 <script src="js/bos.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<!-- 头部图片 -->
+			<img src="{listpic}" alt="" class="img1"  onerror="javascript:this.src='http://www.zhongkechuangxiang.com/plus/img/zhanwei.jpg'">
+			<p>研究所</p>
+		</div>
+		<!-- 标题 -->
+		<div class="title">
+			{title}
+		</div>
+		<!-- 所属领域 -->
+		<div class="whole-choice"   id="domain_main">
+			<div class="choice">
+				<p>所属领域</p>
+			</div>
+			<div class="biology"  id="domain">{linyu}</div>
+		</div>
+		<!-- 所属类型 -->
+		<div class="introduction"   id="type_main">
+			<div class="choice">
+				<p>所属类型</p>
+			</div>
+			<div class="biology" id="type">{type}</div>
+		</div>
+		<!-- 认定部门 -->
+		<!--<div class="introduction"  id="department_main">-->
+			<!--<div class="choice">-->
+				<!--<p>认定部门</p>-->
+			<!--</div>-->
+			<!--<div  class="biology"  id="department">{partment}</div>-->
+		<!--</div>-->
+		<!-- 服务内容 -->
+		<div class="introduction" id="brief_main">
+			<div class="choice">
+				<p>服务内容</p>
+			</div>
+			<div class="choice-word" id="brief">{body}</div>
+		</div>
+
+	</div>
+</body>
+</html>
+<script src="js/jquery.js"></script>
+<script>
+	$(document).ready(function() {	
+		// 所属领域
+		var domain=$('#domain').text();
+		if(domain==""){
+			$("#domain_main").hide(); 
+		}
+		// 所属类型
+		var type=$('#type').text();
+		if(type==""){
+			$("#type_main").hide(); 
+		}
+		// 认定部门
+		var department=$('#department').text();
+		if(department==""){
+			$("#department_main").hide(); 
+		}
+		// 服务内容
+		var brief=$('#brief').text();
+		if(brief==""){
+			$("#brief_main").hide(); 
+		}
+	});
+</script>

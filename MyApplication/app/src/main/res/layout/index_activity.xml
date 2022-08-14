@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape"
+    android:orientation="vertical"
+  >
+        <ListView
+        android:id="@+id/index_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        </ListView>
+
+</com.chenantao.autolayout.AutoLinearLayout>

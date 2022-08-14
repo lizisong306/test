@@ -1,0 +1,1912 @@
+{
+  "code": 1,
+  "data": [
+    {
+      "city": [
+        {
+          "ename": "东城区",
+          "evalue": "1001"
+        },
+        {
+          "ename": "西城区",
+          "evalue": "1002"
+        },
+        {
+          "ename": "崇文区",
+          "evalue": "1003"
+        },
+        {
+          "ename": "宣武区",
+          "evalue": "1004"
+        },
+        {
+          "ename": "朝阳区",
+          "evalue": "1005"
+        },
+        {
+          "ename": "丰台区",
+          "evalue": "1006"
+        },
+        {
+          "ename": "石景山区",
+          "evalue": "1007"
+        },
+        {
+          "ename": "海淀区",
+          "evalue": "1008"
+        },
+        {
+          "ename": "门头沟区",
+          "evalue": "1009"
+        },
+        {
+          "ename": "房山区",
+          "evalue": "1010"
+        },
+        {
+          "ename": "通州区",
+          "evalue": "1011"
+        },
+        {
+          "ename": "顺义区",
+          "evalue": "1012"
+        },
+        {
+          "ename": "昌平区",
+          "evalue": "1013"
+        },
+        {
+          "ename": "大兴区",
+          "evalue": "1014"
+        },
+        {
+          "ename": "怀柔区",
+          "evalue": "1015"
+        },
+        {
+          "ename": "平谷区",
+          "evalue": "1016"
+        },
+        {
+          "ename": "密云县",
+          "evalue": "1017"
+        },
+        {
+          "ename": "延庆县",
+          "evalue": "1018"
+        }
+      ],
+      "evalue": 1000,
+      "province": "北京市"
+    },
+    {
+      "city": [
+        {
+          "ename": "和平区",
+          "evalue": "1501"
+        },
+        {
+          "ename": "河东区",
+          "evalue": "1502"
+        },
+        {
+          "ename": "河西区",
+          "evalue": "1503"
+        },
+        {
+          "ename": "南开区",
+          "evalue": "1504"
+        },
+        {
+          "ename": "河北区",
+          "evalue": "1505"
+        },
+        {
+          "ename": "红桥区",
+          "evalue": "1506"
+        },
+        {
+          "ename": "塘沽区",
+          "evalue": "1507"
+        },
+        {
+          "ename": "汉沽区",
+          "evalue": "1508"
+        },
+        {
+          "ename": "大港区",
+          "evalue": "1509"
+        },
+        {
+          "ename": "东丽区",
+          "evalue": "1510"
+        },
+        {
+          "ename": "西青区",
+          "evalue": "1511"
+        },
+        {
+          "ename": "津南区",
+          "evalue": "1512"
+        },
+        {
+          "ename": "北辰区",
+          "evalue": "1513"
+        },
+        {
+          "ename": "武清区",
+          "evalue": "1514"
+        },
+        {
+          "ename": "宝坻区",
+          "evalue": "1515"
+        },
+        {
+          "ename": "宁河县",
+          "evalue": "1516"
+        },
+        {
+          "ename": "静海县",
+          "evalue": "1517"
+        },
+        {
+          "ename": "蓟　县",
+          "evalue": "1518"
+        }
+      ],
+      "evalue": 1500,
+      "province": "天津市"
+    },
+    {
+      "city": [
+        {
+          "ename": "石家庄市",
+          "evalue": "2001"
+        },
+        {
+          "ename": "唐山市",
+          "evalue": "2002"
+        },
+        {
+          "ename": "秦皇岛市",
+          "evalue": "2003"
+        },
+        {
+          "ename": "邯郸市",
+          "evalue": "2004"
+        },
+        {
+          "ename": "邢台市",
+          "evalue": "2005"
+        },
+        {
+          "ename": "保定市",
+          "evalue": "2006"
+        },
+        {
+          "ename": "张家口市",
+          "evalue": "2007"
+        },
+        {
+          "ename": "承德市",
+          "evalue": "2008"
+        },
+        {
+          "ename": "廊坊市",
+          "evalue": "2009"
+        },
+        {
+          "ename": "衡水市",
+          "evalue": "2010"
+        },
+        {
+          "ename": "沧州市",
+          "evalue": "2011"
+        }
+      ],
+      "evalue": 2000,
+      "province": "河北省"
+    },
+    {
+      "city": [
+        {
+          "ename": "太原市",
+          "evalue": "2501"
+        },
+        {
+          "ename": "大同市",
+          "evalue": "2502"
+        },
+        {
+          "ename": "阳泉市",
+          "evalue": "2503"
+        },
+        {
+          "ename": "长治市",
+          "evalue": "2504"
+        },
+        {
+          "ename": "晋城市",
+          "evalue": "2505"
+        },
+        {
+          "ename": "朔州市",
+          "evalue": "2506"
+        },
+        {
+          "ename": "晋中市",
+          "evalue": "2507"
+        },
+        {
+          "ename": "运城市",
+          "evalue": "2508"
+        },
+        {
+          "ename": "忻州市",
+          "evalue": "2509"
+        },
+        {
+          "ename": "临汾市",
+          "evalue": "2510"
+        },
+        {
+          "ename": "吕梁市",
+          "evalue": "2511"
+        }
+      ],
+      "evalue": 2500,
+      "province": "山西省"
+    },
+    {
+      "city": [
+        {
+          "ename": "呼和浩特市",
+          "evalue": "3001"
+        },
+        {
+          "ename": "包头市",
+          "evalue": "3002"
+        },
+        {
+          "ename": "乌海市",
+          "evalue": "3003"
+        },
+        {
+          "ename": "赤峰市",
+          "evalue": "3004"
+        },
+        {
+          "ename": "通辽市",
+          "evalue": "3005"
+        },
+        {
+          "ename": "鄂尔多斯市",
+          "evalue": "3006"
+        },
+        {
+          "ename": "呼伦贝尔市",
+          "evalue": "3007"
+        },
+        {
+          "ename": "巴彦淖尔市",
+          "evalue": "3008"
+        },
+        {
+          "ename": "乌兰察布市",
+          "evalue": "3009"
+        },
+        {
+          "ename": "兴安盟",
+          "evalue": "3010"
+        },
+        {
+          "ename": "锡林郭勒盟",
+          "evalue": "3011"
+        },
+        {
+          "ename": "阿拉善盟",
+          "evalue": "3012"
+        }
+      ],
+      "evalue": 3000,
+      "province": "内蒙古自治区"
+    },
+    {
+      "city": [
+        {
+          "ename": "沈阳市",
+          "evalue": "3501"
+        },
+        {
+          "ename": "大连市",
+          "evalue": "3502"
+        },
+        {
+          "ename": "鞍山市",
+          "evalue": "3503"
+        },
+        {
+          "ename": "抚顺市",
+          "evalue": "3504"
+        },
+        {
+          "ename": "本溪市",
+          "evalue": "3505"
+        },
+        {
+          "ename": "丹东市",
+          "evalue": "3506"
+        },
+        {
+          "ename": "锦州市",
+          "evalue": "3507"
+        },
+        {
+          "ename": "营口市",
+          "evalue": "3508"
+        },
+        {
+          "ename": "阜新市",
+          "evalue": "3509"
+        },
+        {
+          "ename": "辽阳市",
+          "evalue": "3510"
+        },
+        {
+          "ename": "盘锦市",
+          "evalue": "3511"
+        },
+        {
+          "ename": "铁岭市",
+          "evalue": "3512"
+        },
+        {
+          "ename": "朝阳市",
+          "evalue": "3513"
+        },
+        {
+          "ename": "葫芦岛市",
+          "evalue": "3514"
+        }
+      ],
+      "evalue": 3500,
+      "province": "辽宁省"
+    },
+    {
+      "city": [
+        {
+          "ename": "长春市",
+          "evalue": "4001"
+        },
+        {
+          "ename": "吉林市",
+          "evalue": "4002"
+        },
+        {
+          "ename": "四平市",
+          "evalue": "4003"
+        },
+        {
+          "ename": "辽源市",
+          "evalue": "4004"
+        },
+        {
+          "ename": "通化市",
+          "evalue": "4005"
+        },
+        {
+          "ename": "白山市",
+          "evalue": "4006"
+        },
+        {
+          "ename": "松原市",
+          "evalue": "4007"
+        },
+        {
+          "ename": "白城市",
+          "evalue": "4008"
+        },
+        {
+          "ename": "延边朝鲜族自治州",
+          "evalue": "4009"
+        }
+      ],
+      "evalue": 4000,
+      "province": "吉林省"
+    },
+    {
+      "city": [
+        {
+          "ename": "哈尔滨市",
+          "evalue": "4501"
+        },
+        {
+          "ename": "齐齐哈尔市",
+          "evalue": "4502"
+        },
+        {
+          "ename": "鸡西市",
+          "evalue": "4503"
+        },
+        {
+          "ename": "鹤岗市",
+          "evalue": "4504"
+        },
+        {
+          "ename": "双鸭山市",
+          "evalue": "4505"
+        },
+        {
+          "ename": "大庆市",
+          "evalue": "4506"
+        },
+        {
+          "ename": "伊春市",
+          "evalue": "4507"
+        },
+        {
+          "ename": "佳木斯市",
+          "evalue": "4508"
+        },
+        {
+          "ename": "七台河市",
+          "evalue": "4509"
+        },
+        {
+          "ename": "牡丹江市",
+          "evalue": "4510"
+        },
+        {
+          "ename": "黑河市",
+          "evalue": "4511"
+        },
+        {
+          "ename": "绥化市",
+          "evalue": "4512"
+        },
+        {
+          "ename": "大兴安岭地区",
+          "evalue": "4513"
+        }
+      ],
+      "evalue": 4500,
+      "province": "黑龙江省"
+    },
+    {
+      "city": [
+        {
+          "ename": "黄浦区",
+          "evalue": "5001"
+        },
+        {
+          "ename": "卢湾区",
+          "evalue": "5002"
+        },
+        {
+          "ename": "徐汇区",
+          "evalue": "5003"
+        },
+        {
+          "ename": "长宁区",
+          "evalue": "5004"
+        },
+        {
+          "ename": "静安区",
+          "evalue": "5005"
+        },
+        {
+          "ename": "普陀区",
+          "evalue": "5006"
+        },
+        {
+          "ename": "闸北区",
+          "evalue": "5007"
+        },
+        {
+          "ename": "虹口区",
+          "evalue": "5008"
+        },
+        {
+          "ename": "杨浦区",
+          "evalue": "5009"
+        },
+        {
+          "ename": "闵行区",
+          "evalue": "5010"
+        },
+        {
+          "ename": "宝山区",
+          "evalue": "5011"
+        },
+        {
+          "ename": "嘉定区",
+          "evalue": "5012"
+        },
+        {
+          "ename": "浦东新区",
+          "evalue": "5013"
+        },
+        {
+          "ename": "金山区",
+          "evalue": "5014"
+        },
+        {
+          "ename": "松江区",
+          "evalue": "5015"
+        },
+        {
+          "ename": "青浦区",
+          "evalue": "5016"
+        },
+        {
+          "ename": "南汇区",
+          "evalue": "5017"
+        },
+        {
+          "ename": "奉贤区",
+          "evalue": "5018"
+        },
+        {
+          "ename": "崇明县",
+          "evalue": "5019"
+        }
+      ],
+      "evalue": 5000,
+      "province": "上海市"
+    },
+    {
+      "city": [
+        {
+          "ename": "南京市",
+          "evalue": "5501"
+        },
+        {
+          "ename": "无锡市",
+          "evalue": "5502"
+        },
+        {
+          "ename": "徐州市",
+          "evalue": "5503"
+        },
+        {
+          "ename": "常州市",
+          "evalue": "5504"
+        },
+        {
+          "ename": "苏州市",
+          "evalue": "5505"
+        },
+        {
+          "ename": "南通市",
+          "evalue": "5506"
+        },
+        {
+          "ename": "连云港市",
+          "evalue": "5507"
+        },
+        {
+          "ename": "淮安市",
+          "evalue": "5508"
+        },
+        {
+          "ename": "盐城市",
+          "evalue": "5509"
+        },
+        {
+          "ename": "扬州市",
+          "evalue": "5510"
+        },
+        {
+          "ename": "镇江市",
+          "evalue": "5511"
+        },
+        {
+          "ename": "泰州市",
+          "evalue": "5512"
+        },
+        {
+          "ename": "宿迁市",
+          "evalue": "5513"
+        }
+      ],
+      "evalue": 5500,
+      "province": "江苏省"
+    },
+    {
+      "city": [
+        {
+          "ename": "杭州市",
+          "evalue": "6001"
+        },
+        {
+          "ename": "宁波市",
+          "evalue": "6002"
+        },
+        {
+          "ename": "温州市",
+          "evalue": "6003"
+        },
+        {
+          "ename": "嘉兴市",
+          "evalue": "6004"
+        },
+        {
+          "ename": "湖州市",
+          "evalue": "6005"
+        },
+        {
+          "ename": "绍兴市",
+          "evalue": "6006"
+        },
+        {
+          "ename": "金华市",
+          "evalue": "6007"
+        },
+        {
+          "ename": "衢州市",
+          "evalue": "6008"
+        },
+        {
+          "ename": "舟山市",
+          "evalue": "6009"
+        },
+        {
+          "ename": "台州市",
+          "evalue": "6010"
+        },
+        {
+          "ename": "丽水市",
+          "evalue": "6011"
+        }
+      ],
+      "evalue": 6000,
+      "province": "浙江省"
+    },
+    {
+      "city": [
+        {
+          "ename": "合肥市",
+          "evalue": "6501"
+        },
+        {
+          "ename": "芜湖市",
+          "evalue": "6502"
+        },
+        {
+          "ename": "蚌埠市",
+          "evalue": "6503"
+        },
+        {
+          "ename": "淮南市",
+          "evalue": "6504"
+        },
+        {
+          "ename": "马鞍山市",
+          "evalue": "6505"
+        },
+        {
+          "ename": "淮北市",
+          "evalue": "6506"
+        },
+        {
+          "ename": "铜陵市",
+          "evalue": "6507"
+        },
+        {
+          "ename": "安庆市",
+          "evalue": "6508"
+        },
+        {
+          "ename": "黄山市",
+          "evalue": "6509"
+        },
+        {
+          "ename": "滁州市",
+          "evalue": "6510"
+        },
+        {
+          "ename": "阜阳市",
+          "evalue": "6511"
+        },
+        {
+          "ename": "宿州市",
+          "evalue": "6512"
+        },
+        {
+          "ename": "巢湖市",
+          "evalue": "6513"
+        },
+        {
+          "ename": "六安市",
+          "evalue": "6514"
+        },
+        {
+          "ename": "亳州市",
+          "evalue": "6515"
+        },
+        {
+          "ename": "池州市",
+          "evalue": "6516"
+        },
+        {
+          "ename": "宣城市",
+          "evalue": "6517"
+        }
+      ],
+      "evalue": 6500,
+      "province": "安徽省"
+    },
+    {
+      "city": [
+        {
+          "ename": "福州市",
+          "evalue": "7001"
+        },
+        {
+          "ename": "厦门市",
+          "evalue": "7002"
+        },
+        {
+          "ename": "莆田市",
+          "evalue": "7003"
+        },
+        {
+          "ename": "三明市",
+          "evalue": "7004"
+        },
+        {
+          "ename": "泉州市",
+          "evalue": "7005"
+        },
+        {
+          "ename": "漳州市",
+          "evalue": "7006"
+        },
+        {
+          "ename": "南平市",
+          "evalue": "7007"
+        },
+        {
+          "ename": "龙岩市",
+          "evalue": "7008"
+        },
+        {
+          "ename": "宁德市",
+          "evalue": "7009"
+        }
+      ],
+      "evalue": 7000,
+      "province": "福建省"
+    },
+    {
+      "city": [
+        {
+          "ename": "南昌市",
+          "evalue": "7501"
+        },
+        {
+          "ename": "景德镇市",
+          "evalue": "7502"
+        },
+        {
+          "ename": "萍乡市",
+          "evalue": "7503"
+        },
+        {
+          "ename": "九江市",
+          "evalue": "7504"
+        },
+        {
+          "ename": "新余市",
+          "evalue": "7505"
+        },
+        {
+          "ename": "鹰潭市",
+          "evalue": "7506"
+        },
+        {
+          "ename": "赣州市",
+          "evalue": "7507"
+        },
+        {
+          "ename": "吉安市",
+          "evalue": "7508"
+        },
+        {
+          "ename": "宜春市",
+          "evalue": "7509"
+        },
+        {
+          "ename": "抚州市",
+          "evalue": "7510"
+        },
+        {
+          "ename": "上饶市",
+          "evalue": "7511"
+        }
+      ],
+      "evalue": 7500,
+      "province": "江西省"
+    },
+    {
+      "city": [
+        {
+          "ename": "济南市",
+          "evalue": "8001"
+        },
+        {
+          "ename": "青岛市",
+          "evalue": "8002"
+        },
+        {
+          "ename": "淄博市",
+          "evalue": "8003"
+        },
+        {
+          "ename": "枣庄市",
+          "evalue": "8004"
+        },
+        {
+          "ename": "烟台市",
+          "evalue": "8005"
+        },
+        {
+          "ename": "潍坊市",
+          "evalue": "8006"
+        },
+        {
+          "ename": "济宁市",
+          "evalue": "8007"
+        },
+        {
+          "ename": "泰安市",
+          "evalue": "8008"
+        },
+        {
+          "ename": "威海市",
+          "evalue": "8009"
+        },
+        {
+          "ename": "日照市",
+          "evalue": "8010"
+        },
+        {
+          "ename": "莱芜市",
+          "evalue": "8011"
+        },
+        {
+          "ename": "临沂市",
+          "evalue": "8012"
+        },
+        {
+          "ename": "德州市",
+          "evalue": "8013"
+        },
+        {
+          "ename": "聊城市",
+          "evalue": "8014"
+        },
+        {
+          "ename": "滨州市",
+          "evalue": "8015"
+        },
+        {
+          "ename": "菏泽市",
+          "evalue": "8016"
+        }
+      ],
+      "evalue": 8000,
+      "province": "山东省"
+    },
+    {
+      "city": [
+        {
+          "ename": "郑州市",
+          "evalue": "8501"
+        },
+        {
+          "ename": "开封市",
+          "evalue": "8502"
+        },
+        {
+          "ename": "洛阳市",
+          "evalue": "8503"
+        },
+        {
+          "ename": "平顶山市",
+          "evalue": "8504"
+        },
+        {
+          "ename": "安阳市",
+          "evalue": "8505"
+        },
+        {
+          "ename": "鹤壁市",
+          "evalue": "8506"
+        },
+        {
+          "ename": "新乡市",
+          "evalue": "8507"
+        },
+        {
+          "ename": "焦作市",
+          "evalue": "8508"
+        },
+        {
+          "ename": "濮阳市",
+          "evalue": "8509"
+        },
+        {
+          "ename": "许昌市",
+          "evalue": "8510"
+        },
+        {
+          "ename": "漯河市",
+          "evalue": "8511"
+        },
+        {
+          "ename": "三门峡市",
+          "evalue": "8512"
+        },
+        {
+          "ename": "南阳市",
+          "evalue": "8513"
+        },
+        {
+          "ename": "商丘市",
+          "evalue": "8514"
+        },
+        {
+          "ename": "信阳市",
+          "evalue": "8515"
+        },
+        {
+          "ename": "周口市",
+          "evalue": "8516"
+        },
+        {
+          "ename": "驻马店市",
+          "evalue": "8517"
+        }
+      ],
+      "evalue": 8500,
+      "province": "河南省"
+    },
+    {
+      "city": [
+        {
+          "ename": "武汉市",
+          "evalue": "9001"
+        },
+        {
+          "ename": "黄石市",
+          "evalue": "9002"
+        },
+        {
+          "ename": "十堰市",
+          "evalue": "9003"
+        },
+        {
+          "ename": "宜昌市",
+          "evalue": "9004"
+        },
+        {
+          "ename": "襄樊市",
+          "evalue": "9005"
+        },
+        {
+          "ename": "鄂州市",
+          "evalue": "9006"
+        },
+        {
+          "ename": "荆门市",
+          "evalue": "9007"
+        },
+        {
+          "ename": "孝感市",
+          "evalue": "9008"
+        },
+        {
+          "ename": "荆州市",
+          "evalue": "9009"
+        },
+        {
+          "ename": "黄冈市",
+          "evalue": "9010"
+        },
+        {
+          "ename": "咸宁市",
+          "evalue": "9011"
+        },
+        {
+          "ename": "随州市",
+          "evalue": "9012"
+        },
+        {
+          "ename": "恩施土家族苗族自治州",
+          "evalue": "9013"
+        },
+        {
+          "ename": "省直辖行政单位",
+          "evalue": "9014"
+        }
+      ],
+      "evalue": 9000,
+      "province": "湖北省"
+    },
+    {
+      "city": [
+        {
+          "ename": "长沙市",
+          "evalue": "9501"
+        },
+        {
+          "ename": "株洲市",
+          "evalue": "9502"
+        },
+        {
+          "ename": "湘潭市",
+          "evalue": "9503"
+        },
+        {
+          "ename": "衡阳市",
+          "evalue": "9504"
+        },
+        {
+          "ename": "邵阳市",
+          "evalue": "9505"
+        },
+        {
+          "ename": "岳阳市",
+          "evalue": "9506"
+        },
+        {
+          "ename": "常德市",
+          "evalue": "9507"
+        },
+        {
+          "ename": "张家界市",
+          "evalue": "9508"
+        },
+        {
+          "ename": "益阳市",
+          "evalue": "9509"
+        },
+        {
+          "ename": "郴州市",
+          "evalue": "9510"
+        },
+        {
+          "ename": "永州市",
+          "evalue": "9511"
+        },
+        {
+          "ename": "怀化市",
+          "evalue": "9512"
+        },
+        {
+          "ename": "娄底市",
+          "evalue": "9513"
+        },
+        {
+          "ename": "湘西土家族苗族自治州",
+          "evalue": "9514"
+        }
+      ],
+      "evalue": 9500,
+      "province": "湖南省"
+    },
+    {
+      "city": [
+        {
+          "ename": "广州市",
+          "evalue": "10001"
+        },
+        {
+          "ename": "韶关市",
+          "evalue": "10002"
+        },
+        {
+          "ename": "深圳市",
+          "evalue": "10003"
+        },
+        {
+          "ename": "珠海市",
+          "evalue": "10004"
+        },
+        {
+          "ename": "汕头市",
+          "evalue": "10005"
+        },
+        {
+          "ename": "佛山市",
+          "evalue": "10006"
+        },
+        {
+          "ename": "江门市",
+          "evalue": "10007"
+        },
+        {
+          "ename": "湛江市",
+          "evalue": "10008"
+        },
+        {
+          "ename": "茂名市",
+          "evalue": "10009"
+        },
+        {
+          "ename": "肇庆市",
+          "evalue": "10010"
+        },
+        {
+          "ename": "惠州市",
+          "evalue": "10011"
+        },
+        {
+          "ename": "梅州市",
+          "evalue": "10012"
+        },
+        {
+          "ename": "汕尾市",
+          "evalue": "10013"
+        },
+        {
+          "ename": "河源市",
+          "evalue": "10014"
+        },
+        {
+          "ename": "阳江市",
+          "evalue": "10015"
+        },
+        {
+          "ename": "清远市",
+          "evalue": "10016"
+        },
+        {
+          "ename": "东莞市",
+          "evalue": "10017"
+        },
+        {
+          "ename": "中山市",
+          "evalue": "10018"
+        },
+        {
+          "ename": "潮州市",
+          "evalue": "10019"
+        },
+        {
+          "ename": "揭阳市",
+          "evalue": "10020"
+        },
+        {
+          "ename": "云浮市",
+          "evalue": "10021"
+        }
+      ],
+      "evalue": 10000,
+      "province": "广东省"
+    },
+    {
+      "city": [
+        {
+          "ename": "南宁市",
+          "evalue": "10501"
+        },
+        {
+          "ename": "柳州市",
+          "evalue": "10502"
+        },
+        {
+          "ename": "桂林市",
+          "evalue": "10503"
+        },
+        {
+          "ename": "梧州市",
+          "evalue": "10504"
+        },
+        {
+          "ename": "北海市",
+          "evalue": "10505"
+        },
+        {
+          "ename": "防城港市",
+          "evalue": "10506"
+        },
+        {
+          "ename": "钦州市",
+          "evalue": "10507"
+        },
+        {
+          "ename": "贵港市",
+          "evalue": "10508"
+        },
+        {
+          "ename": "玉林市",
+          "evalue": "10509"
+        },
+        {
+          "ename": "百色市",
+          "evalue": "10510"
+        },
+        {
+          "ename": "贺州市",
+          "evalue": "10511"
+        },
+        {
+          "ename": "河池市",
+          "evalue": "10512"
+        },
+        {
+          "ename": "来宾市",
+          "evalue": "10513"
+        },
+        {
+          "ename": "崇左市",
+          "evalue": "10514"
+        }
+      ],
+      "evalue": 10500,
+      "province": "广西壮族自治区"
+    },
+    {
+      "city": [
+        {
+          "ename": "海口市",
+          "evalue": "11001"
+        },
+        {
+          "ename": "三亚市",
+          "evalue": "11002"
+        },
+        {
+          "ename": "省直辖县级行政单位",
+          "evalue": "11003"
+        }
+      ],
+      "evalue": 11000,
+      "province": "海南省"
+    },
+    {
+      "city": [
+        {
+          "ename": "万州区",
+          "evalue": "11501"
+        },
+        {
+          "ename": "涪陵区",
+          "evalue": "11502"
+        },
+        {
+          "ename": "渝中区",
+          "evalue": "11503"
+        },
+        {
+          "ename": "大渡口区",
+          "evalue": "11504"
+        },
+        {
+          "ename": "江北区",
+          "evalue": "11505"
+        },
+        {
+          "ename": "沙坪坝区",
+          "evalue": "11506"
+        },
+        {
+          "ename": "九龙坡区",
+          "evalue": "11507"
+        },
+        {
+          "ename": "南岸区",
+          "evalue": "11508"
+        },
+        {
+          "ename": "北碚区",
+          "evalue": "11509"
+        },
+        {
+          "ename": "万盛区",
+          "evalue": "11510"
+        },
+        {
+          "ename": "双桥区",
+          "evalue": "11511"
+        },
+        {
+          "ename": "渝北区",
+          "evalue": "11512"
+        },
+        {
+          "ename": "巴南区",
+          "evalue": "11513"
+        },
+        {
+          "ename": "黔江区",
+          "evalue": "11514"
+        },
+        {
+          "ename": "长寿区",
+          "evalue": "11515"
+        },
+        {
+          "ename": "綦江县",
+          "evalue": "11516"
+        },
+        {
+          "ename": "潼南县",
+          "evalue": "11517"
+        },
+        {
+          "ename": "铜梁县",
+          "evalue": "11518"
+        },
+        {
+          "ename": "大足县",
+          "evalue": "11519"
+        },
+        {
+          "ename": "荣昌县",
+          "evalue": "11520"
+        },
+        {
+          "ename": "璧山县",
+          "evalue": "11521"
+        },
+        {
+          "ename": "梁平县",
+          "evalue": "11522"
+        },
+        {
+          "ename": "城口县",
+          "evalue": "11523"
+        },
+        {
+          "ename": "丰都县",
+          "evalue": "11524"
+        },
+        {
+          "ename": "垫江县",
+          "evalue": "11525"
+        },
+        {
+          "ename": "武隆县",
+          "evalue": "11526"
+        },
+        {
+          "ename": "忠　县",
+          "evalue": "11527"
+        },
+        {
+          "ename": "开　县",
+          "evalue": "11528"
+        },
+        {
+          "ename": "云阳县",
+          "evalue": "11529"
+        },
+        {
+          "ename": "奉节县",
+          "evalue": "11530"
+        },
+        {
+          "ename": "巫山县",
+          "evalue": "11531"
+        },
+        {
+          "ename": "巫溪县",
+          "evalue": "11532"
+        },
+        {
+          "ename": "石柱土家族自治县",
+          "evalue": "11533"
+        },
+        {
+          "ename": "秀山土家族苗族自治县",
+          "evalue": "11534"
+        },
+        {
+          "ename": "酉阳土家族苗族自治县",
+          "evalue": "11535"
+        },
+        {
+          "ename": "彭水苗族土家族自治县",
+          "evalue": "11536"
+        },
+        {
+          "ename": "江津市",
+          "evalue": "11537"
+        },
+        {
+          "ename": "合川市",
+          "evalue": "11538"
+        },
+        {
+          "ename": "永川市",
+          "evalue": "11539"
+        },
+        {
+          "ename": "南川市",
+          "evalue": "11540"
+        }
+      ],
+      "evalue": 11500,
+      "province": "重庆市"
+    },
+    {
+      "city": [
+        {
+          "ename": "成都市",
+          "evalue": "12001"
+        },
+        {
+          "ename": "自贡市",
+          "evalue": "12002"
+        },
+        {
+          "ename": "攀枝花市",
+          "evalue": "12003"
+        },
+        {
+          "ename": "泸州市",
+          "evalue": "12004"
+        },
+        {
+          "ename": "德阳市",
+          "evalue": "12005"
+        },
+        {
+          "ename": "绵阳市",
+          "evalue": "12006"
+        },
+        {
+          "ename": "广元市",
+          "evalue": "12007"
+        },
+        {
+          "ename": "遂宁市",
+          "evalue": "12008"
+        },
+        {
+          "ename": "内江市",
+          "evalue": "12009"
+        },
+        {
+          "ename": "乐山市",
+          "evalue": "12010"
+        },
+        {
+          "ename": "南充市",
+          "evalue": "12011"
+        },
+        {
+          "ename": "眉山市",
+          "evalue": "12012"
+        },
+        {
+          "ename": "宜宾市",
+          "evalue": "12013"
+        },
+        {
+          "ename": "广安市",
+          "evalue": "12014"
+        },
+        {
+          "ename": "达州市",
+          "evalue": "12015"
+        },
+        {
+          "ename": "雅安市",
+          "evalue": "12016"
+        },
+        {
+          "ename": "巴中市",
+          "evalue": "12017"
+        },
+        {
+          "ename": "资阳市",
+          "evalue": "12018"
+        },
+        {
+          "ename": "阿坝藏族羌族自治州",
+          "evalue": "12019"
+        },
+        {
+          "ename": "甘孜藏族自治州",
+          "evalue": "12020"
+        },
+        {
+          "ename": "凉山彝族自治州",
+          "evalue": "12021"
+        }
+      ],
+      "evalue": 12000,
+      "province": "四川省"
+    },
+    {
+      "city": [
+        {
+          "ename": "贵阳市",
+          "evalue": "12501"
+        },
+        {
+          "ename": "六盘水市",
+          "evalue": "12502"
+        },
+        {
+          "ename": "遵义市",
+          "evalue": "12503"
+        },
+        {
+          "ename": "安顺市",
+          "evalue": "12504"
+        },
+        {
+          "ename": "铜仁地区",
+          "evalue": "12505"
+        },
+        {
+          "ename": "黔西南布依族苗族自治州",
+          "evalue": "12506"
+        },
+        {
+          "ename": "毕节地区",
+          "evalue": "12507"
+        },
+        {
+          "ename": "黔东南苗族侗族自治州",
+          "evalue": "12508"
+        },
+        {
+          "ename": "黔南布依族苗族自治州",
+          "evalue": "12509"
+        }
+      ],
+      "evalue": 12500,
+      "province": "贵州省"
+    },
+    {
+      "city": [
+        {
+          "ename": "昆明市",
+          "evalue": "13001"
+        },
+        {
+          "ename": "曲靖市",
+          "evalue": "13002"
+        },
+        {
+          "ename": "玉溪市",
+          "evalue": "13003"
+        },
+        {
+          "ename": "保山市",
+          "evalue": "13004"
+        },
+        {
+          "ename": "昭通市",
+          "evalue": "13005"
+        },
+        {
+          "ename": "丽江市",
+          "evalue": "13006"
+        },
+        {
+          "ename": "思茅市",
+          "evalue": "13007"
+        },
+        {
+          "ename": "临沧市",
+          "evalue": "13008"
+        },
+        {
+          "ename": "楚雄彝族自治州",
+          "evalue": "13009"
+        },
+        {
+          "ename": "红河哈尼族彝族自治州",
+          "evalue": "13010"
+        },
+        {
+          "ename": "文山壮族苗族自治州",
+          "evalue": "13011"
+        },
+        {
+          "ename": "西双版纳傣族自治州",
+          "evalue": "13012"
+        },
+        {
+          "ename": "大理白族自治州",
+          "evalue": "13013"
+        },
+        {
+          "ename": "德宏傣族景颇族自治州",
+          "evalue": "13014"
+        },
+        {
+          "ename": "怒江傈僳族自治州",
+          "evalue": "13015"
+        },
+        {
+          "ename": "迪庆藏族自治州",
+          "evalue": "13016"
+        }
+      ],
+      "evalue": 13000,
+      "province": "云南省"
+    },
+    {
+      "city": [
+        {
+          "ename": "拉萨市",
+          "evalue": "13501"
+        },
+        {
+          "ename": "昌都地区",
+          "evalue": "13502"
+        },
+        {
+          "ename": "山南地区",
+          "evalue": "13503"
+        },
+        {
+          "ename": "日喀则地区",
+          "evalue": "13504"
+        },
+        {
+          "ename": "那曲地区",
+          "evalue": "13505"
+        },
+        {
+          "ename": "阿里地区",
+          "evalue": "13506"
+        },
+        {
+          "ename": "林芝地区",
+          "evalue": "13507"
+        }
+      ],
+      "evalue": 13500,
+      "province": "西藏自治区"
+    },
+    {
+      "city": [
+        {
+          "ename": "西安市",
+          "evalue": "14001"
+        },
+        {
+          "ename": "铜川市",
+          "evalue": "14002"
+        },
+        {
+          "ename": "宝鸡市",
+          "evalue": "14003"
+        },
+        {
+          "ename": "咸阳市",
+          "evalue": "14004"
+        },
+        {
+          "ename": "渭南市",
+          "evalue": "14005"
+        },
+        {
+          "ename": "延安市",
+          "evalue": "14006"
+        },
+        {
+          "ename": "汉中市",
+          "evalue": "14007"
+        },
+        {
+          "ename": "榆林市",
+          "evalue": "14008"
+        },
+        {
+          "ename": "安康市",
+          "evalue": "14009"
+        },
+        {
+          "ename": "商洛市",
+          "evalue": "14010"
+        }
+      ],
+      "evalue": 14000,
+      "province": "陕西省"
+    },
+    {
+      "city": [
+        {
+          "ename": "兰州市",
+          "evalue": "14501"
+        },
+        {
+          "ename": "嘉峪关市",
+          "evalue": "14502"
+        },
+        {
+          "ename": "金昌市",
+          "evalue": "14503"
+        },
+        {
+          "ename": "白银市",
+          "evalue": "14504"
+        },
+        {
+          "ename": "天水市",
+          "evalue": "14505"
+        },
+        {
+          "ename": "武威市",
+          "evalue": "14506"
+        },
+        {
+          "ename": "张掖市",
+          "evalue": "14507"
+        },
+        {
+          "ename": "平凉市",
+          "evalue": "14508"
+        },
+        {
+          "ename": "酒泉市",
+          "evalue": "14509"
+        },
+        {
+          "ename": "庆阳市",
+          "evalue": "14510"
+        },
+        {
+          "ename": "定西市",
+          "evalue": "14511"
+        },
+        {
+          "ename": "陇南市",
+          "evalue": "14512"
+        },
+        {
+          "ename": "临夏回族自治州",
+          "evalue": "14513"
+        },
+        {
+          "ename": "甘南藏族自治州",
+          "evalue": "14514"
+        }
+      ],
+      "evalue": 14500,
+      "province": "甘肃省"
+    },
+    {
+      "city": [
+        {
+          "ename": "西宁市",
+          "evalue": "15001"
+        },
+        {
+          "ename": "海东地区",
+          "evalue": "15002"
+        },
+        {
+          "ename": "海北藏族自治州",
+          "evalue": "15003"
+        },
+        {
+          "ename": "黄南藏族自治州",
+          "evalue": "15004"
+        },
+        {
+          "ename": "海南藏族自治州",
+          "evalue": "15005"
+        },
+        {
+          "ename": "果洛藏族自治州",
+          "evalue": "15006"
+        },
+        {
+          "ename": "玉树藏族自治州",
+          "evalue": "15007"
+        },
+        {
+          "ename": "海西蒙古族藏族自治州",
+          "evalue": "15008"
+        }
+      ],
+      "evalue": 15000,
+      "province": "青海省"
+    },
+    {
+      "city": [
+        {
+          "ename": "银川市",
+          "evalue": "15501"
+        },
+        {
+          "ename": "石嘴山市",
+          "evalue": "15502"
+        },
+        {
+          "ename": "吴忠市",
+          "evalue": "15503"
+        },
+        {
+          "ename": "固原市",
+          "evalue": "15504"
+        },
+        {
+          "ename": "中卫市",
+          "evalue": "15505"
+        }
+      ],
+      "evalue": 15500,
+      "province": "宁夏回族自治区"
+    },
+    {
+      "city": [
+        {
+          "ename": "乌鲁木齐市",
+          "evalue": "16001"
+        },
+        {
+          "ename": "克拉玛依市",
+          "evalue": "16002"
+        },
+        {
+          "ename": "吐鲁番地区",
+          "evalue": "16003"
+        },
+        {
+          "ename": "哈密地区",
+          "evalue": "16004"
+        },
+        {
+          "ename": "昌吉回族自治州",
+          "evalue": "16005"
+        },
+        {
+          "ename": "博尔塔拉蒙古自治州",
+          "evalue": "16006"
+        },
+        {
+          "ename": "巴音郭楞蒙古自治州",
+          "evalue": "16007"
+        },
+        {
+          "ename": "阿克苏地区",
+          "evalue": "16008"
+        },
+        {
+          "ename": "克孜勒苏柯尔克孜自治州",
+          "evalue": "16009"
+        },
+        {
+          "ename": "喀什地区",
+          "evalue": "16010"
+        },
+        {
+          "ename": "和田地区",
+          "evalue": "16011"
+        },
+        {
+          "ename": "伊犁哈萨克自治州",
+          "evalue": "16012"
+        },
+        {
+          "ename": "塔城地区",
+          "evalue": "16013"
+        },
+        {
+          "ename": "阿勒泰地区",
+          "evalue": "16014"
+        },
+        {
+          "ename": "省直辖行政单位",
+          "evalue": "16015"
+        }
+      ],
+      "evalue": 16000,
+      "province": "新疆维吾尔自治区"
+    }
+  ],
+  "message": "success!"
+}

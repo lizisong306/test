@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoRelativeLayout
+    android:id="@+id/bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+
+    android:orientation="vertical">
+
+    <view.HeaderListView
+        android:id="@+id/listview"
+        style="@style/listview_style"
+        addHeader="true"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        />
+    <ImageView
+        android:layout_width="2048dp"
+        android:layout_height="5dp"
+        android:background="@drawable/img"/>
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progress"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/animation_list" />
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_below="@+id/top"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@color/white"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="@color/white"
+            >
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="本地"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:textColor="#1d1d1d"
+                android:drawableRight="@mipmap/nav_xiala"
+                android:id="@+id/nice_spinner1" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/nice_spinner1"
+                android:background="@color/lines"
+                />
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/zhuanjia"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/nice_spinner1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/nav_zhuanjia"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/xiangmu"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/zhuanjia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/nav_xiangmu"
+                android:layout_centerVertical="true"
+                />
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/zhuanli"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@+id/xiangmu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/nav_zhuanli"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:id="@+id/sousu"
+                android:layout_toRightOf="@+id/nice_spinner1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/nav_sousuo"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:id="@+id/sosocontent"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/sousu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="输入搜索内容"
+                android:gravity="left|center_vertical"
+                android:layout_centerVertical="true"
+                android:textColor="#8b8b8b"
+                android:textSize="11sp"
+                />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:background="@color/lines"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/nodata"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/firstnodata"
+        android:layout_centerInParent="true"
+        />
+
+</com.chenantao.autolayout.AutoRelativeLayout>

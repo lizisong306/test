@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view.CustomLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/custom"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:fitsSystemWindows="true"
+    android:background="#ffffff"
+    android:clipToPadding="true"
+    >
+    <view.RefreshListView
+        android:id="@+id/listview"
+        style="@style/listview_style"
+        android:layout_marginTop="0dp"
+        addHeader="true"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        />
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/whrite"
+        android:visibility="gone"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            >
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/back"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/titledes"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:textColor="#181818"
+                android:textSize="@dimen/biaoti"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progress"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/animation_list" />
+
+</view.CustomLinearLayout>

@@ -1,0 +1,142 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.1'
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+    defaultConfig {
+        applicationId "com.maidiantech"
+        minSdkVersion 17
+        targetSdkVersion 27
+        versionCode 72
+        versionName "5.0.1"
+        multiDexEnabled true
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+   
+
+//    packagingOptions{
+//        doNotStrip '*/mips/*.so'
+//        doNotStrip '*/mips64/*.so'
+//    }
+
+
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+//    productFlavors {
+//        百度 {
+//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "88001721"]
+//        }
+//        手机助手360 {
+//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "88002021"]
+//        }
+//        c {
+//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "88002121"]
+//        }
+//        应用汇 {
+//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "88002321"]
+//        }
+//        阿里 {
+//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "88002621"]
+//        }
+//        应用宝 {
+//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "88002721"]
+//        }
+//        乐商店 {
+//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "88002921"]
+//        }
+//        华为 {
+//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "88003021"]
+//        }
+//        木蚂蚁 {
+//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "88003721"]
+//        }
+//        优亿市场 {
+//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "88004021"]
+//        }
+//        安智市场 {
+//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "88004121"]
+//        }
+//        冒泡堂 {
+//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "88004421"]
+//        }
+//        小米 {
+//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "88004621"]
+//        }
+//        oppo {
+//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "88017521"]
+//        }
+//        vivo {
+//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "88022421"]
+//        }
+//
+//    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile files('libs/xUtils-2.6.14.jar')
+    compile project(':AutoLayout')
+    compile files('libs/okio-1.8.0.jar')
+    compile files('libs/okhttp-2.7.5.jar')
+    compile files('libs/gson-2.2.1.jar')
+    compile files('libs/universal-image-loader-1.9.5.jar')
+    compile 'com.flyco.dialog:FlycoDialog_Lib:1.0.0'
+    compile files('libs/wup-1.0.0.E-SNAPSHOT.jar')
+    compile files('libs/jg_filter_sdk_1.1.jar')
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile files('libs/picasso-2.2.0.jar')
+    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+    compile files('libs/mta-sdk-1.6.2.jar')
+    compile files('libs/jsoup-1.8.1.jar')
+    compile 'se.emilsjolander:stickylistheaders:2.7.0'
+    compile project(':pickerview')
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    compile files('libs/httpmime-4.1.1.jar')
+    compile files('libs/weiboSDKCore_3.1.4.jar')
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/alipaySdk-20170710.jar')
+    compile files('libs/barlibrary-2.3.0.jar')
+    compile files('libs/Xg_sdk_v3.2.2_20180116_1704.jar')
+    compile 'com.android.support:support-annotations:24.2.1'
+    compile 'junit:junit:4.12'
+    compile files('libs/umeng-common-1.5.4.jar')
+    compile files('libs/utdid4all-1.1.5.3_proguard.jar')
+    compile files('libs/SecurityEnvSDK-release-1.1.0.jar')
+    compile files('libs/umeng-share-core-6.9.4.jar')
+    compile files('libs/umeng-sharetool-6.9.4.jar')
+    compile files('libs/umeng-share-QQ-simplify-6.9.4.jar')
+    compile files('libs/umeng-share-wechat-simplify-6.9.4.jar')
+    //    compile files('app/libs/wechat-sdk-android-with-mta-5.4.0.jar')
+
+//        compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:5.1.6'
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'org.greenrobot:eventbus:3.2.0'
+    compile 'com.jakewharton:butterknife:8.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.0.0'
+
+    //compile 'com.github.warkiz.widget:indicatorseekbar:2.1.2'
+//    compile files('libs/wechat-sdk-android-with-mta-5.4.0.jar')
+}

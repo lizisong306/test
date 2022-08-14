@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="12px"
+    android:layout_marginTop="24px"
+    >
+
+    <ImageView
+
+        android:layout_width="330px"
+        android:layout_height="330px"
+
+        android:id="@+id/imageView"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/custom"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_marginRight="18px"
+
+        android:layout_marginTop="18px" />
+
+
+
+</com.chenantao.autolayout.AutoRelativeLayout>

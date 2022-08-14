@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:fitsSystemWindows="true"
+    android:gravity="center_vertical"
+    android:id="@+id/lay"
+    android:background="@mipmap/shape"
+    android:clipToPadding="true">
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="15dp"
+         android:layout_marginLeft="14dp"
+         android:layout_marginRight="14dp"
+         >
+         <view.ZQImageViewRoundOval
+             android:id="@+id/bg"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:src="@drawable/test_image"
+             android:scaleType="centerCrop"
+             android:background="@mipmap/shape"
+             />
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:gravity="center_vertical"
+             android:layout_centerVertical="true">
+             <TextView
+                 android:id="@+id/texttitle"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="18sp"
+                 android:textColor="#FFFFFF"
+                 android:textStyle="bold"
+                 android:text="简单需求"
+                 android:layout_marginLeft="20dp"
+
+                 />
+             <TextView
+                 android:id="@+id/textdes"
+                 android:layout_marginTop="5dp"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="12sp"
+                 android:textColor="#FFFFFF"
+                 android:layout_marginLeft="20dp"
+                 android:text="9999位专属科技经纪人"
+                 />
+         </LinearLayout>
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:layout_marginRight="20dp"
+             android:background="@mipmap/right_arrrow"
+             />
+     </RelativeLayout>
+
+
+
+</com.chenantao.autolayout.AutoRelativeLayout>

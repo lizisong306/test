@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:clipToPadding="true"
+>
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/commontitle" />
+    <LinearLayout
+        android:layout_marginTop="19px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="版本"
+            android:visibility="invisible"
+            android:gravity="right"
+            android:textColor="@color/lansecolor"
+            android:textSize="30px"/>
+        <TextView
+            android:layout_marginLeft="15px"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="V0.01"
+            android:paddingRight="20dp"
+            android:gravity="right"
+            android:textColor="@color/title"
+            android:textSize="30px"
+            android:id="@+id/versionname" />
+    </LinearLayout>
+    <ImageView
+       android:layout_centerHorizontal="true"
+        android:layout_marginTop="80px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/logottt"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100px">
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:id="@+id/company_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="26px"
+            android:textColor="@color/title"
+            android:gravity="center"
+            android:text="  \n Copyright©2019 Inc.\n All Rights Reserved"
+          />
+    </RelativeLayout>
+</com.chenantao.autolayout.AutoLinearLayout>

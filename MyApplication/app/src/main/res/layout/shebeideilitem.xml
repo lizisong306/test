@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="48dp"
+    android:background="@color/white"
+    >
+    <TextView
+        android:id="@+id/name"
+        android:layout_marginLeft="21dp"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="设备名称"
+        android:textColor="#ffc1a5"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textSize="14sp"
+        />
+    <TextView
+        android:id="@+id/namecontent"
+        android:layout_marginLeft="28dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="高分辨率贴附式细胞膜片电容与递..."
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="#3e3e3e"
+        android:textSize="14sp"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_alignBottom="@+id/name"
+        android:layout_toEndOf="@+id/name"
+        android:layout_marginStart="28dp" />
+    <TextView
+        android:id="@+id/dixianline"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/lines"
+        />
+</RelativeLayout>

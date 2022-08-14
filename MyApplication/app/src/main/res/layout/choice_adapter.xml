@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    >
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:id="@+id/title"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:maxLines="1"
+        android:background="@mipmap/pop_bg_industry"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       >
+        <ImageView
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/pop_bg_delete"
+            />
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_centerInParent="true"
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:background="@mipmap/icon_delete"
+            />
+    </RelativeLayout>
+
+</com.chenantao.autolayout.AutoLinearLayout>

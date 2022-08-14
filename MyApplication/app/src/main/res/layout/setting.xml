@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:background="#f6f6f6"
+    android:clipToPadding="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/whrite"
+        >
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/shezhi_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/back"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:layout_centerInParent="true"
+            android:textColor="@color/title_head"
+            android:textSize="@dimen/biaoti"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/line1_slip"
+        android:layout_marginTop="19px"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dddddd"/>
+    <LinearLayout
+        android:background="@color/whrite"
+        android:layout_width="match_parent"
+        android:layout_height="86px"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+         android:id="@+id/person_info"
+        android:layout_marginLeft="19px"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="个人信息"
+        android:textSize="29px"
+        android:textColor="#494949"
+        />
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/safari_back"
+            android:layout_marginRight="19px"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/line2_slip"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dddddd"/>
+
+
+
+
+    <LinearLayout
+
+        android:id="@+id/gai_pwd_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="19px"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#dddddd"/>
+        <LinearLayout
+            android:background="@color/whrite"
+            android:layout_width="match_parent"
+            android:layout_height="86px"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/gai_pwd"
+                android:layout_marginLeft="19px"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="修改密码"
+                android:textSize="29px"
+                android:textColor="#494949"
+                />
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/safari_back"
+                android:layout_marginRight="19px"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/line3_slip"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#dddddd"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginTop="19px"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dddddd"/>
+    <LinearLayout
+        android:background="@color/whrite"
+        android:layout_width="match_parent"
+        android:layout_height="86px"
+        android:id="@+id/more_line"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/more_setting"
+            android:layout_marginLeft="19px"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="更多设置"
+            android:textSize="29px"
+            android:textColor="#494949"
+            />
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/safari_back"
+            android:layout_marginRight="19px"
+            />
+    </LinearLayout>
+    <TextView
+         android:id="@+id/line4_slip"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dddddd"/>
+
+
+</com.chenantao.autolayout.AutoLinearLayout>

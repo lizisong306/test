@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/detail_ra"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:Android="http://schemas.android.com/tools"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:clipToPadding="true">
+
+       <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="@color/lansecolor"
+            >
+            <ImageView
+               android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/back"
+                android:layout_alignParentLeft="true"
+               />
+            <TextView
+                android:id="@+id/deli_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_centerInParent="true"
+                android:textColor="@color/whrite"
+                android:textSize="@dimen/biaoti"/>
+            <ImageView
+
+                android:layout_marginRight="19px"
+               android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@mipmap/dimension_share"
+
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/whrite"
+            android:gravity="center"
+            android:layout_weight="1">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <view.CustomWebView
+                    android:id="@+id/wbviw"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"></view.CustomWebView>
+                <ProgressBar
+                    android:id="@+id/progress"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminateDrawable="@drawable/animation_list" />
+                <Button
+                    android:visibility="gone"
+                   android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="11dp"
+                    android:id="@+id/yuyue"
+                    android:layout_width="59dp"
+                    android:layout_height="59dp"
+                    android:background="@mipmap/yue"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    <Button
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/lansecolor"
+        android:text="预约"
+        android:textColor="@color/whrite"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#dddddd"/>
+
+    <!--<LinearLayout-->
+       <!--android:visibility="gone"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="100px"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:background="#EEEEEE"-->
+        <!--android:gravity="center">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_marginLeft="24px"-->
+            <!--android:layout_gravity="center_vertical" >-->
+            <!--<LinearLayout-->
+
+                <!--android:id="@+id/shoucan"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical">-->
+                <!--<CheckBox-->
+                    <!--android:id="@+id/my_collect"-->
+                    <!--android:button="@null"-->
+                    <!--android:layout_width="40px"-->
+                    <!--android:layout_height="40px"-->
+                    <!--android:background="@drawable/shape_color"-->
+                    <!--/>-->
+                <!--<TextView-->
+                    <!--android:layout_marginTop="5px"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textSize="23px"-->
+                    <!--android:textColor="#7A7A7A"-->
+                    <!--android:text="收藏"/>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+
+                <!--android:id="@+id/guanzhu"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical">-->
+                <!--<CheckBox-->
+                    <!--android:id="@+id/check_guanzhu"-->
+                    <!--android:button="@null"-->
+                    <!--android:layout_width="40px"-->
+                    <!--android:layout_height="40px"-->
+                    <!--android:background="@drawable/dimens_like"-->
+                    <!--/>-->
+                <!--<TextView-->
+                    <!--android:layout_marginTop="5px"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textSize="23px"-->
+                    <!--android:textColor="#7A7A7A"-->
+                    <!--android:text="关注"/>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+
+                <!--android:id="@+id/dianzan"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical">-->
+            <!--<Button-->
+                <!--android:id="@+id/my_tishi"-->
+                <!--android:button="@null"-->
+                <!--android:layout_width="40px"-->
+                <!--android:layout_height="40px"-->
+                <!--android:background="@mipmap/zan_z"-->
+
+                <!--/>-->
+                <!--<TextView-->
+                    <!--android:layout_marginTop="5px"-->
+                    <!--android:textSize="23px"-->
+                    <!--android:textColor="#7A7A7A"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="点赞"/>-->
+                <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:id="@+id/ScrollView2"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--&gt;-->
+            <!--<Button-->
+                <!--android:id="@+id/yuyue"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="100px"-->
+                <!--android:background="@mipmap/yuyue"-->
+                <!--android:text="我要预约"-->
+                <!--android:textColor="@color/whrite"-->
+                <!--android:textSize="29px"-->
+                <!--/>-->
+            <!--&lt;!&ndash;<EditText&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/my_editext"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:inputType="textMultiLine"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:hint="写评论"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:background="@null"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textSize="24px"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:paddingLeft="10px"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginTop="10px"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:scrollbars="vertical"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:maxLines="4"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:gravity="left|center"&ndash;&gt;-->
+                <!--&lt;!&ndash;/>&ndash;&gt;-->
+        <!--</LinearLayout>-->
+
+        <!--&lt;!&ndash;<Button&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginLeft="30px"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/my_fason"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="100px"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="50px"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="发送"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="@color/white"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="#33AF54"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:visibility="gone"&ndash;&gt;-->
+            <!--&lt;!&ndash;/>&ndash;&gt;-->
+
+
+
+
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="100px"
+        android:orientation="horizontal"
+        android:background="#EEEEEE"
+        android:gravity="center">
+
+
+        <LinearLayout
+            android:visibility="visible"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:id="@+id/pic_back"
+                android:layout_marginLeft="38px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/zixun_back_details"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="24px"
+            android:layout_gravity="center_vertical" >
+            <LinearLayout
+
+
+                android:id="@+id/dianzan"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/my_tishi"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:background="@mipmap/zixun_like"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/shoucan"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <CheckBox
+                    android:id="@+id/my_collect"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:button="@null"
+                    android:background="@mipmap/zixun_collect"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/shares"
+                    android:button="@null"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/zixun_share"
+
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</com.chenantao.autolayout.AutoLinearLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="@color/whrite"
+        android:layout_marginTop="6dp"
+        android:id="@+id/device_layout"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:layout_marginRight="11dp"
+            android:id="@+id/shebei_line"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_marginRight="10dp"
+                    android:scaleType="fitXY"
+                    android:layout_width="85dp"
+                    android:layout_height="56dp"
+                    android:background="@mipmap/information_placeholder"
+                    android:id="@+id/device_img" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/device_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ATT试用商用5G通信服务 英"
+                        android:textSize="@dimen/biaoti1"
+                        android:textColor="@color/title_head"
+                        android:singleLine="false"
+                        android:maxLines="2"
+                        android:ellipsize="marquee"
+                        android:lineSpacingExtra="14px"
+                        />
+                    <LinearLayout
+
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="所属领域:"
+                            android:textSize="@dimen/title"
+                            android:textColor="@color/title"/>
+                        <TextView
+
+                            android:id="@+id/device_linyu"
+                            android:layout_marginLeft="15px"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/title"
+                            android:textColor="@color/title"
+                            android:text=""/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+
+                android:layout_marginLeft="10dp"
+                android:id="@+id/device_description"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/title"
+                android:textColor="@color/title"
+                android:maxLines="3"
+                android:ellipsize="marquee"
+                android:lineSpacingExtra="6dp"/>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                   android:visibility="gone"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设备"
+                    android:textSize="22px"
+                    android:textColor="@color/title"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:gravity="right">
+
+                    <RelativeLayout
+                        android:layout_gravity="center"
+                        android:layout_marginRight="19px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:visibility="gone"
+                            android:id="@+id/shenbei_tuijian"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/tuijian"/>
+                        <ImageView
+                            android:visibility="gone"
+                            android:id="@+id/shenbei_zhiding"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/zhiding"/>
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/sb_zt"
+                        android:layout_marginRight="15px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/zhuanti_img"/>
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/shebei_dianzan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/zan"
+                            android:layout_marginRight="5px"/>
+                        <TextView
+                            android:id="@+id/device_zan"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="999"
+
+                            android:textSize="22px"
+                            android:textColor="@color/title"
+                            />
+                    </LinearLayout>
+
+                    <TextView
+
+                        android:id="@+id/device_look"
+                        android:layout_marginLeft="15px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="999"
+                        android:drawableLeft="@mipmap/look"
+                        android:textSize="22px"
+                        android:textColor="@color/title"
+                        android:drawablePadding="5px"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

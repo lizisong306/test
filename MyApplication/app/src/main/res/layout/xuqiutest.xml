@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/detail_ra"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:Android="http://schemas.android.com/tools"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:clipToPadding="true">
+    <LinearLayout
+        android:id="@+id/title"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="@color/whrite"
+            >
+
+            <TextView
+                android:id="@+id/titlecontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的需求"
+                android:layout_centerInParent="true"
+                android:textColor="@color/title_head"
+                android:textSize="@dimen/biaoti"/>
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/need_add"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="37px"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/need_add"
+                android:layout_marginRight="24px"
+                android:layout_gravity="center"/>
+
+            <ImageView
+
+                android:id="@+id/about_backs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/back"
+              android:layout_centerVertical="true"
+
+               />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+         <ImageView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@mipmap/scoll"
+             />
+        </ScrollView>
+
+    </LinearLayout>
+    </com.chenantao.autolayout.AutoLinearLayout>

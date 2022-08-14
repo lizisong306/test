@@ -1,0 +1,276 @@
+{
+    "code": 1,
+    "message": "success!",
+    "data": [
+        {
+            "evalue": 500,
+            "ename": "电子信息",
+            "sonCate": [
+                {
+                    "evalue": "510",
+                    "ename": "新型显示器件"
+                },
+                {
+                    "evalue": "509",
+                    "ename": "光机电一体化"
+                },
+                {
+                    "evalue": "508",
+                    "ename": "智能交通产品"
+                },
+                {
+                    "evalue": "507",
+                    "ename": "信息安全产品"
+                },
+                {
+                    "evalue": "506",
+                    "ename": "新型电子元器件"
+                },
+                {
+                    "evalue": "505",
+                    "ename": "广播电视技术产品"
+                },
+                {
+                    "evalue": "504",
+                    "ename": "通信产品"
+                },
+                {
+                    "evalue": "503",
+                    "ename": "计算机及网络产品"
+                },
+                {
+                    "evalue": "502",
+                    "ename": "微电子技术"
+                },
+                {
+                    "evalue": "501",
+                    "ename": "软件产品"
+                }
+            ]
+        },
+        {
+            "evalue": 1000,
+            "ename": "新材料",
+            "sonCate":[
+                {
+                    "evalue":"1002",
+                    "ename":"电子信息材料"
+                },
+                {
+                    "evalue":"1003",
+                    "ename":"新能源材料"
+                },
+                {
+                    "evalue":"1004",
+                    "ename":"纳米材料"
+                },
+                {
+                    "evalue":"1005",
+                    "ename":"先进复合材料"
+                },
+                {
+                    "evalue":"1006",
+                    "ename":"先进陶瓷材料"
+                },
+                {
+                    "evalue":"1007",
+                    "ename":"生态环境材料"
+                },
+                {
+                    "evalue":"1008",
+                    "ename":"新型功能材料"
+                },
+                {
+                    "evalue":"1009",
+                    "ename":"生物医用材料"
+                },
+                {
+                    "evalue":"1010",
+                    "ename":"高性能结构材料"
+                },
+                {
+                    "evalue":"1011",
+                    "ename":"智能材料"
+                },
+                {
+                    "evalue":"1012",
+                    "ename":"新型建筑新材料"
+                },
+                {
+                    "evalue":"1013",
+                    "ename":"化工新材料"
+                }
+            ]
+        },
+        {
+            "evalue": 1500,
+            "ename": "生物技术",
+            "sonCate": [
+                {
+                    "evalue": "1505",
+                    "ename": "微生物工业"
+                },
+                {
+                    "evalue": "1504",
+                    "ename": "生物制造"
+                },
+                {
+                    "evalue": "1503",
+                    "ename": "生物农业"
+                },
+                {
+                    "evalue": "1502",
+                    "ename": "生物能源"
+                },
+                {
+                    "evalue": "1501",
+                    "ename": "生物医药"
+                }
+            ]
+        },
+        {
+            "evalue": 3000,
+            "ename": "节能环保",
+            "sonCate": [
+                {
+                    "evalue": "3004",
+                    "ename": "节能环保综合管理服务"
+                },
+                {
+                    "evalue": "3003",
+                    "ename": "资源循环利用产业"
+                },
+                {
+                    "evalue": "3002",
+                    "ename": "先进环保产业"
+                },
+                {
+                    "evalue": "3001",
+                    "ename": "高效节能产业"
+                }
+            ]
+        },
+        {
+            "evalue": 2000,
+            "ename": "先进制造",
+            "sonCate": [
+                {
+                    "evalue": "2007",
+                    "ename": "先进制造工艺与装备"
+                },
+                {
+                    "evalue": "2006",
+                    "ename": "海洋工程装备"
+                },
+                {
+                    "evalue": "2005",
+                    "ename": "卫星及应用产业"
+                },
+                {
+                    "evalue": "2004",
+                    "ename": "航空装备产业"
+                },
+                {
+                    "evalue": "2003",
+                    "ename": "智能制造装备"
+                },
+                {
+                    "evalue": "2002",
+                    "ename": "轨道交通装备产业"
+                },
+                {
+                    "evalue": "2001",
+                    "ename": "新能源汽车"
+                }
+            ]
+        },
+        {
+            "evalue": 3500,
+            "ename": "文化创意",
+            "sonCate": [
+                {
+                    "evalue": "3504",
+                    "ename": "软件、网络及计算机服务"
+                },
+                {
+                    "evalue": "3503",
+                    "ename": "广播、电视、电影"
+                },
+                {
+                    "evalue": "3502",
+                    "ename": "新闻出版"
+                },
+                {
+                    "evalue": "3501",
+                    "ename": "文化艺术"
+                },
+                {
+                    "evalue": "3505",
+                    "ename": "广告会展服务"
+                },
+                {
+                    "evalue": "3506",
+                    "ename": "艺术品交易"
+                },
+                {
+                    "evalue": "3507",
+                    "ename": "设计服务"
+                },
+                {
+                    "evalue": "3508",
+                    "ename": "旅欧休闲娱乐服务"
+                },
+                {
+                    "evalue": "3509",
+                    "ename": "其他辅助服务"
+                }
+            ]
+        },
+        {
+            "evalue": 4000,
+            "ename": "化学化工",
+            "sonCate": [
+                {
+                    "evalue": "4001",
+                    "ename": "精细化工"
+                }
+            ]
+        },
+        {
+            "evalue": 2500,
+            "ename": "新能源",
+            "sonCate": [
+                {
+                    "evalue": "2505",
+                    "ename": "海洋能"
+                },
+                {
+                    "evalue": "2504",
+                    "ename": "地热能"
+                },
+                {
+                    "evalue": "2503",
+                    "ename": "生物质能产业"
+                },
+                {
+                    "evalue": "2502",
+                    "ename": "风能"
+                },
+                {
+                    "evalue": "2501",
+                    "ename": "太阳能"
+                }
+            ]
+        },
+        {
+            "evalue": 4500,
+            "ename": "其他",
+            "sonCate": [
+                {
+                    "evalue": "4501",
+                    "ename": "高新技术服务"
+                }
+            ]
+        }
+    ]
+}

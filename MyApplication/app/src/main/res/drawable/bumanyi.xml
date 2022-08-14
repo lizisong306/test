@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false"
+    >
+    <item android:drawable="@mipmap/bumanyi1" android:duration="50" />
+    <item android:drawable="@mipmap/bumanyi2" android:duration="50" />
+    <item android:drawable="@mipmap/bumanyi3" android:duration="50" />
+    <item android:drawable="@mipmap/bumanyi4" android:duration="50" />
+    <item android:drawable="@mipmap/bumanyi5" android:duration="50" />
+    <item android:drawable="@mipmap/bumanyi6" android:duration="50" />
+    <item android:drawable="@mipmap/bumanyi7" android:duration="50" />
+    <item android:drawable="@mipmap/bumanyi8" android:duration="50" />
+    <item android:drawable="@mipmap/bumanyi9" android:duration="50" />
+    <item android:drawable="@mipmap/bumanyi10" android:duration="50" />
+    <item android:drawable="@mipmap/bumanyi11" android:duration="50" />
+    <item android:drawable="@mipmap/bumanyi12" android:duration="50" />
+    <item android:drawable="@mipmap/bumanyi13" android:duration="50" />
+    <item android:drawable="@mipmap/bumanyi14" android:duration="50" />
+
+</animation-list>

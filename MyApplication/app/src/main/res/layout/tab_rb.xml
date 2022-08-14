@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="50dp"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:background="@drawable/tab_selector"
+android:layout_marginLeft="15dp"
+	android:textSize="18sp"
+	android:paddingTop="20dp"
+	android:paddingBottom="13dp"
+	android:gravity="center"
+	android:button="@null"
+
+	android:textColor="@color/head_check"
+	android:clickable="true"
+	android:text="地方" />

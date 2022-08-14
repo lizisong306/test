@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/detail_ra"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:Android="http://schemas.android.com/tools"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="#EFEFEF"
+    android:clipToPadding="true">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:gravity="center_vertical"
+        android:background="@color/whrite"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/sh_quxiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/back"/>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_marginLeft="29px"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:orientation="horizontal"
+
+            android:gravity="center_vertical"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+
+                >
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/search"
+                    />
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/rlSearchFrameDelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+                android:layout_weight="30"
+                >
+                <AutoCompleteTextView
+                    android:singleLine="true"
+                    android:imeOptions="actionSearch"
+                    android:popupBackground="@null"
+                    style="@style/AutoCompleteStyle"
+                    android:id="@+id/search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:focusable="true"
+                    android:hint=" 搜索"
+                    android:gravity="center_vertical|left"
+                    android:textSize="25px"
+                    android:textCursorDrawable="@drawable/edit_cursor_color"
+                    android:completionThreshold="1"
+                    android:textColorHint="#c3c3c3"
+                    android:textColor="#c3c3c3"
+
+
+                    />
+                <ImageView android:id="@+id/ivDeleteText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/search_delete"
+                    android:layout_centerInParent="true"
+                    android:paddingRight="10px"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/sousuo"
+            android:textColor="@color/lansecolor"
+            android:layout_marginRight="29px"
+            android:layout_marginLeft="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"/>
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/whrite"
+        android:visibility="gone"
+        android:id="@+id/search_top"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <view.ExpandTabView
+                android:gravity="center_horizontal"
+                android:id="@+id/expandtab_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#3e3e3e"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/zc_order"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:textColor="#535353"
+            android:text="关注度优先"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/redian"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whrite">
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_marginTop="34px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="搜索历史"
+                android:textSize="27px"
+                android:textColor="#c6c6c6"
+                android:layout_marginBottom="10dp"
+                />
+
+        </LinearLayout>
+        <ListView
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/top"
+            android:id="@+id/redian_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            >
+        </ListView>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/shuju_line"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/shuju_img"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/none"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ListView
+
+                android:id="@+id/search_listview_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:fadingEdge="none"
+                android:overScrollMode="never"
+                android:divider="@null"
+                android:layout_marginBottom="24px"
+                ></ListView>
+        </LinearLayout>
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progress"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@drawable/animation_list" />
+    </RelativeLayout>
+
+</com.chenantao.autolayout.AutoLinearLayout>

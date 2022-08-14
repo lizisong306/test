@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/bg"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tips"
+        android:layout_width="match_parent"
+        android:textColor="@color/lansecolor"
+        android:textSize="16sp"
+        android:paddingLeft="20px"
+        android:gravity="center_vertical"
+        android:background="#f6f6f6"
+        android:text="已选中的行业:"
+        android:layout_height="92px" />
+    <view.SwipeLayout
+        android:visibility="visible"
+        android:id="@+id/sl"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="60dp" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="#8e8e8e"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="Call"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="#ff0000"
+                android:gravity="center"
+                android:id="@+id/del"
+                android:text="删除"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@mipmap/img_dianzixinxi_icon" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="15sp"
+                    android:text="盖聂"
+                    android:textColor="@color/title_head" />
+                <TextView
+                    android:id="@+id/des"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="20dp"
+                    android:visibility="gone"
+                    android:text="盖聂"
+                    android:textColor="@color/text_gray" />
+            </LinearLayout>
+        </LinearLayout>
+    </view.SwipeLayout>
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:textSize="16sp"
+            android:layout_marginLeft="24dp"
+            android:text="政策解读"
+            android:textColor="@color/text_gray"
+            android:gravity="center_vertical"
+            android:id="@+id/txt"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:textSize="16sp"
+            android:layout_marginRight="24dp"
+            android:layout_alignParentRight="true"
+            android:text="全部"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@+id/arrow"
+            android:id="@+id/txt_tip"
+            android:paddingLeft="30dp"
+            android:textColor="@color/text_gray"
+
+            />
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/personal_data_from_arrow"
+            />
+
+    </RelativeLayout>
+
+
+</com.chenantao.autolayout.AutoRelativeLayout>

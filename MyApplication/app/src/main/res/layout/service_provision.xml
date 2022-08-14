@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:fitsSystemWindows="true"
+
+    android:clipToPadding="true">
+
+  <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:id="@+id/bg"
+        android:background="@color/whrite"
+        >
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/service_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/back"
+            android:layout_marginLeft="19px"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务条款"
+            android:layout_centerInParent="true"
+            android:textColor="@color/title_head"
+            android:textSize="@dimen/biaoti"/>
+    </RelativeLayout>
+
+
+
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="5dp">
+              <ScrollView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:scrollbars="none" >
+
+              <TextView
+                  android:id="@+id/info"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:textColor="@android:color/black"/>
+              </ScrollView>
+          </LinearLayout>
+
+
+</com.chenantao.autolayout.AutoLinearLayout>
+

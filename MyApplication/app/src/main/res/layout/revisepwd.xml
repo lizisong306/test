@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:gravity="center_horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="@color/whrite"
+            >
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/xiugai_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/back"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="修改密码"
+                android:layout_centerInParent="true"
+                android:textColor="@color/title_head"
+                android:textSize="@dimen/biaoti"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+    <EditText
+        android:id="@+id/find_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="70px"
+        android:hint="请输入您的原始密码"
+        android:textSize="28px"
+        android:textColor="@color/title"
+        android:paddingLeft="16px"
+        android:layout_marginLeft="19px"
+        android:layout_marginRight="19px"
+        android:background="@drawable/denglu"
+        android:gravity="left|center"
+        android:inputType="textPassword"
+        android:layout_marginTop="19px"
+        android:digits="@string/filter_vcode"
+        android:textColorHint="@color/title"
+        />
+
+    <EditText
+        android:layout_marginTop="19px"
+        android:id="@+id/new_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="70px"
+        android:hint="请输入您的新密码"
+        android:textSize="28px"
+        android:textColor="@color/title"
+        android:textColorHint="@color/title"
+        android:paddingLeft="16px"
+        android:layout_marginLeft="19px"
+        android:layout_marginRight="19px"
+        android:background="@drawable/denglu"
+        android:inputType="textPassword"
+        />
+
+    <EditText
+        android:layout_marginTop="19px"
+        android:id="@+id/right_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="70px"
+        android:hint="请输入您的确认密码"
+        android:textSize="28px"
+        android:textColor="@color/title"
+        android:textColorHint="@color/title"
+        android:paddingLeft="16px"
+        android:layout_marginLeft="19px"
+        android:layout_marginRight="19px"
+        android:background="@drawable/denglu"
+        android:inputType="textPassword"
+        />
+
+
+    <Button
+        android:id="@+id/find_next"
+        android:layout_marginTop="30px"
+        android:layout_width="wrap_content"
+        android:layout_height="70px"
+        android:layout_marginLeft="19px"
+        android:layout_marginRight="19px"
+        android:background="@drawable/logins"
+        android:text="保存"
+        android:textSize="30px"
+        android:textColor="@color/white"
+
+        />
+
+</com.chenantao.autolayout.AutoLinearLayout>

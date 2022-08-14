@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/askinfo_dialog_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        >
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/askinfo_content_marginTop"
+            android:layout_marginLeft="@dimen/askinfo_content_marginLeft"
+            android:layout_marginRight="@dimen/askinfo_content_marginLeft"
+            android:layout_marginTop="@dimen/askinfo_content_marginTop"
+            android:text="登录后才能使用"
+            android:textColor="@color/text_black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/askinfo_content_marginTop"
+            android:layout_marginLeft="@dimen/askinfo_content_marginLeft"
+            android:layout_marginRight="@dimen/askinfo_content_marginLeft"
+            android:layout_marginTop="@dimen/askinfo_content_marginTop"
+            android:text="登录后才能使用"
+            android:textColor="@color/lansecolor"
+            android:visibility="gone"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:textColor="@color/text_black"
+        android:textSize="16dp" 
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp" 
+        android:visibility="gone">
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider_0"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5px"
+        android:background="@color/item_divider_dark" 
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/negative_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/askinfo_dialog_bg"
+            android:gravity="center"
+            android:padding="@dimen/askinfo_btn_padding"
+            android:text="@string/cancel"
+            android:textColor="@color/lansecolor"
+            android:textSize="@dimen/askinfo_text_size"
+            android:visibility="gone" >
+        </TextView>
+
+        <View
+            android:id="@+id/divider_1"
+            android:layout_width="0.5px"
+            android:layout_height="fill_parent"
+            android:layout_weight="0"
+            android:background="@color/item_divider_dark"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/neutral_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/askinfo_dialog_bg"
+            android:gravity="center"
+            android:padding="@dimen/askinfo_btn_padding"
+            android:text="待定"
+            android:textColor="@color/lansecolor"
+            android:textSize="@dimen/askinfo_text_size"
+            android:visibility="gone" >
+        </TextView>
+
+        <View
+            android:id="@+id/divider_2"
+            android:layout_width="0.5px"
+            android:layout_height="fill_parent"
+            android:layout_weight="0"
+            android:background="@color/item_divider_dark"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/positive_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/askinfo_dialog_bg"
+            android:gravity="center"
+            android:padding="@dimen/askinfo_btn_padding"
+            android:text="@string/str_confirm"
+            android:textColor="@color/lansecolor"
+            android:textSize="@dimen/askinfo_text_size"
+            android:visibility="gone" >
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

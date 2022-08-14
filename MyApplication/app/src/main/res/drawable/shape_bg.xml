@@ -1,0 +1,25 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- bottom shadow -->
+    <item>
+        <shape android:shape="rectangle">
+            <!-- from top to bottom -->
+            <size android:height="5dp"/>
+            <padding android:bottom="5dp"/>
+            <gradient
+                android:angle="-90"
+                android:endColor="@android:color/transparent"
+                android:startColor="#e9e2e2"/>
+        </shape>
+    </item>
+
+    <!-- content -->
+    <item
+        android:gravity="bottom">
+        <shape android:shape="rectangle">
+            <padding android:bottom="1dp"/>
+            <size android:height="1dp"/>
+            <solid android:color="@color/colorPrimary"/>
+        </shape>
+    </item>
+
+</layer-list>

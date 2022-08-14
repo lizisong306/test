@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:gravity="center_horizontal"
+  >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="@color/whrite"
+            >
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/information_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/back"
+
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="完善信息"
+                android:layout_centerInParent="true"
+                android:textColor="@color/title_head"
+                android:textSize="@dimen/biaoti"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <EditText
+        android:textCursorDrawable="@drawable/edit_cursor_color"
+        android:id="@+id/companyName"
+        android:layout_marginTop="19px"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="70px"
+        android:hint="企业名称"
+        android:textSize="26px"
+        android:layout_marginLeft="19px"
+        android:layout_marginRight="19px"
+        android:background="@drawable/denglu"
+
+        android:textColor="#969696"
+        android:textColorHint="#969696"
+
+        android:drawablePadding="15px"
+
+        android:paddingLeft="15px"
+        />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_marginTop="19px"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="70px"
+        android:hint="企业所在地"
+        android:textSize="26px"
+        android:layout_marginLeft="19px"
+        android:layout_marginRight="19px"
+        android:background="@drawable/denglu"
+        android:textColor="#969696"
+        android:textColorHint="#969696"
+
+        android:drawablePadding="15px"
+
+        android:paddingLeft="15px"
+        android:drawableRight="@mipmap/down_btn"
+        android:paddingRight="15px"
+         />
+
+    <EditText
+        android:textCursorDrawable="@drawable/edit_cursor_color"
+        android:id="@+id/lead"
+        android:layout_marginTop="19px"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="70px"
+        android:hint="企业联系人"
+        android:textSize="26px"
+        android:layout_marginLeft="19px"
+        android:layout_marginRight="19px"
+        android:background="@drawable/denglu"
+        android:textColor="#969696"
+        android:textColorHint="#969696"
+
+        android:drawablePadding="15px"
+
+        android:paddingLeft="15px"
+        />
+    <EditText
+        android:textCursorDrawable="@drawable/edit_cursor_color"
+        android:id="@+id/mobile"
+        android:layout_marginTop="19px"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="70px"
+        android:hint="企业联系电话"
+        android:textSize="26px"
+        android:layout_marginLeft="19px"
+        android:layout_marginRight="19px"
+        android:background="@drawable/denglu"
+        android:textColor="#969696"
+        android:textColorHint="#969696"
+        android:inputType="number"
+        android:drawablePadding="15px"
+
+        android:paddingLeft="15px"
+        />
+    <EditText
+        android:textCursorDrawable="@drawable/edit_cursor_color"
+        android:id="@+id/mima"
+        android:layout_marginTop="19px"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="70px"
+        android:hint="密码长度6-20位"
+        android:textSize="26px"
+        android:layout_marginLeft="19px"
+        android:layout_marginRight="19px"
+        android:background="@drawable/denglu"
+        android:textColor="#969696"
+        android:textColorHint="#969696"
+        android:inputType="textPassword"
+        android:drawablePadding="15px"
+        android:digits="@string/filter_vcode"
+        android:paddingLeft="15px"
+        />
+    <LinearLayout
+        android:layout_marginTop="19px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15px"
+        >
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@drawable/check"
+            android:layout_marginRight="19px"
+            android:id="@+id/checkBox" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我已阅读并同意"
+            android:textSize="22px"
+            android:textColor="@color/colortitle"/>
+        <TextView
+            android:id="@+id/maidianservice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22px"
+            android:text="《钛领科技服务条款》"
+            android:textColor="#00ACED"
+            />
+    </LinearLayout>
+    <Button
+        android:layout_marginLeft="19px"
+        android:layout_marginRight="19px"
+        android:id="@+id/register_nexts"
+        android:layout_marginTop="30px"
+        android:layout_width="wrap_content"
+        android:layout_height="70px"
+        android:background="@drawable/logins"
+        android:text="立即注册"
+        android:textSize="30px"
+        android:textColor="@color/white"
+        android:gravity="center"
+
+        />
+
+</com.chenantao.autolayout.AutoLinearLayout>

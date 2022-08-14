@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="72"
+    android:versionName="5.0.1"
+    package="com.maidiantech">
+
+    <uses-sdk  android:minSdkVersion="8" android:targetSdkVersion="11"
+        />
+    <application
+        android:anyDensity="true"
+        android:hardwareAccelerated="true"
+        android:allowBackup="true"
+        android:icon="@drawable/log"
+        android:label="@string/app_name"
+        android:resizeableActivity="true"
+        android:supportsRtl="true"
+        android:name="application.MyApplication"
+        android:theme="@style/AppTheme"
+        android:resizeable="true"
+        android:largeHeap="true">
+        <meta-data android:name="design_width" android:value="720"></meta-data>
+        <meta-data android:name="design_height" android:value="1280"></meta-data>
+        <!--适配全面屏手机-->
+        <meta-data android:name="android.max_aspect"
+            android:value="2.1"/>
+
+        <activity android:name="com.maidiantech.Guidepage"
+            android:launchMode="singleTask"
+            android:windowIsTranslucent="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.maidiantech.ShowActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowIsTranslucent="true"
+           />
+        <activity android:name=".QingBaoDeilActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".TestActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".FreeTryRead"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".LookQingBaoActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".KejiZiYuan"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".HuoBanActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".NewResultActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".XiuGaiBaMaiTiaoJian"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".XiuGaiListActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ZhuanLiShenQing"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".TestRecyclerViewActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".NewJingPinProject"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".DFBaoTouMore"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".DFlinYiMore"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".WebViewNew"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ActivityUITest"
+            android:windowLightStatusBar="true"
+            android:fitsSystemWindows="true"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".TopicInformation"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".NewProJect"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".NewSearchHistory"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".NewSearchContent"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".NewRenCaiTail"
+            android:screenOrientation="portrait" />
+        <activity android:name=".NewRenCaiTailL"
+            android:screenOrientation="portrait" />
+        <activity android:name=".XinFanAnCeShi"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".NewZhuanliActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".NewZhengCeActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".PDFDemo"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name="com.maidiantech.MainActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name="com.maidiantech.SearchActivity"
+            android:windowSoftInputMode="adjustPan|stateUnchanged"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name="com.maidiantech.DetailsActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".BejingCeShi"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            />
+        <activity android:name=".ActiveActivity"
+            android:screenOrientation="portrait"
+           />
+        <activity android:name=".AppointmentSpecialist"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ReviewandPass"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".AuditActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ShenHeFail"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ChengZhangHuoBanShenQing"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ChengZhangHuoBanActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ChengZhangHuoBanDeil"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UnitedStatesDeilActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ShopAppointment"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".NewRenCaiDetail"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ShiLiDemo"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name="com.maidiantech.ZixunDetailsActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".XuQiuLiuCheng"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".XuQiuShow"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".LookMoreQingBao"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".WebQingBaoActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".XuQiuSearch"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ShareActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".XuQiuSendSuccess"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".LookMoreActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".XiangMuListActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".MoreJigouItemActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".MyXuqiuActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".XiangMuDuiJieActivity"
+            android:screenOrientation="portrait"
+            />
+        
+        <activity android:name=".EarlyRef"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/AppTheme2"
+            />
+
+        <activity android:name="com.maidiantech.ServiceActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".XuQiuXiangqQing"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".XuanZeYouHuiJuanActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".NewProjectActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".AddXuQiu2"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".MydataActivityInfo"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+
+        <activity android:name="com.maidiantech.MyloginActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name="com.maidiantech.ForgetActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name="com.maidiantech.RegisterCountActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".YanzhenActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".NewpwdActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".MyqqActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Demandrelease"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".SettingActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".XingquActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ShopActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".YanZhengMa"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Appointment"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ServiceProvisionAcitivty" />
+        <activity android:name=".SecondActivity"
+            android:theme="@style/AppTheme2"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".SubjectDetailActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".OpenPDFActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name=".ReleaseAdd"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            />
+        <activity android:name=".Technologyrealease"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name=".TechnologyAdd"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".MycollectActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".MymessageActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name=".My_shezhi"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".SearchInfo"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ManymoreActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".bamaiIndustry"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".bmplusetwo"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".BmpluseThree"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".DFInfoShow"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".RevisePwd"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ShowFristGuideActivity" android:theme="@style/showguid"
+
+            />
+        <activity android:name=".ResetPwd"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ResultActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".MoreInfoActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".PulseActivity" android:theme="@style/Theme.CustomTranslucent"
+            />
+        <activity android:name=".IndexActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.Dialog"/>
+        <activity android:name=".Dialogclass"
+            android:theme="@style/MyDialogStyle"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".informations"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".FinishActivity"
+            android:theme="@style/FinishDialogStyle"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".pluse_four"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".My_yuyue"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Myattention"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Feedback"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".FirmActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Perfectinformation"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".About"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Enterpriseinfo"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".WebViewActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".AddXuQiu"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".AddSheBei"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".AddProject"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".AddRencai"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".XuQiuDeail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/AppTheme2"
+            />
+        <service android:name=".MaindianService" />
+        <activity android:name=".SpecialActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".UnitActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ProJect"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".PolicyActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".PersonActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".EquipmentActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".LaboratoryActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".SheBeiActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".PatentActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".TuiJianErWeiMa"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".JigouXiangQing"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".SheBeiDeilActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name=".SearchPage"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name=".SearchCommentPage"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name=".SearchContentResult"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name=".XuqiuActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".LocalCity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".SearchTypeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name=".SearchTypeResult"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name=".RelationPhone"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".LookMoreChannel"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".PayConfirmActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".XuQiuBuChong"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".PaySDkCallActivity"
+            android:theme="@style/showguid"/>
+        <activity android:name=".PageInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".MyCoupon"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".FaBuActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            />
+        <activity android:name=".QiYeBuChong"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".TianXuQiu"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            />
+        <activity android:name=".WriteXuQiu"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1105617885" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:theme="@style/Theme.UMDefault"
+            android:excludeFromRecents="true"/>
+
+
+
+        <provider
+            android:authorities="com.maidiantech.fileprovider"
+            android:name="android.support.v4.content.FileProvider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"
+                />
+        </provider>
+
+        <!-- ###################添加UmengAppkey###################### -->
+
+        <!--<activity-->
+            <!--android:name=".apshare.ShareEntryActivity"-->
+            <!--android:configChanges="keyboardHidden|orientation"-->
+            <!--android:screenOrientation="portrait" >-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />-->
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false" >
+        </activity>
+        <activity android:name=".LatitudeLongitudeBaiDuMap"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".BaseMapDemo"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".MessageActivity"
+            android:screenOrientation="portrait"
+            />
+        <!--<activity android:name="fragment.FirstFragment" />-->
+        <activity android:name=".CommentActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".PingLunActivity" android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".CommunicationAndReply"  android:screenOrientation="portrait"/>
+        <activity android:name=".UnitXiuActivity" android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".JianPan"   android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"
+            />
+
+        <!-- 应用宝支付-->
+        <activity
+                android:name="com.alipay.sdk.app.H5PayActivity"
+                android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+                android:exported="false"
+                android:screenOrientation="behind"
+                android:windowSoftInputMode="adjustResize|stateHidden" >
+            </activity>
+        <activity
+                android:name="com.alipay.sdk.app.H5AuthActivity"
+                android:configChanges="orientation|keyboardHidden|navigation"
+                android:exported="false"
+                android:screenOrientation="behind"
+                android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+
+        <activity android:name=".AdressBaiduMap"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".YuyueRenCai" android:screenOrientation="portrait"/>
+        <activity android:name=".NewXuQiu" android:screenOrientation="portrait"/>
+        <activity android:name=".XiuGaiMingCheng" android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            />
+        <activity android:name=".QingBaoActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".UnitedStatesActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".NewXuQiuXiangQing" />
+        <activity android:name=".KongBaiActivity"  android:theme="@style/showguid"/>
+        <activity android:name=".TestCIYun" android:screenOrientation="portrait"/>
+        <activity android:name=".RencaiActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/AppTheme2"/>
+        <activity android:name=".SelectTimeActivity"
+            android:theme="@android:style/Theme.Translucent"
+            android:screenOrientation="portrait"
+            />
+
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"/>
+
+
+        <!-- 【必须】 信鸽receiver广播接收 -->
+        <receiver
+            android:name="com.tencent.android.tpush.XGPushReceiver"
+            android:process=":xg_service_v4" >
+            <intent-filter android:priority="0x7fffffff" >
+                <!-- 【必须】 信鸽SDK的内部广播 -->
+                <action android:name="com.tencent.android.tpush.action.SDK" />
+                <action android:name="com.tencent.android.tpush.action.INTERNAL_PUSH_MESSAGE" />
+                <!-- 【必须】 系统广播：开屏和网络切换 -->
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <!-- 【可选】 一些常用的系统广播，增强信鸽service的复活机会，请根据需要选择。当然，你也可以添加APP自定义的一些广播让启动service -->
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+            <!-- 【可选】 usb相关的系统广播，增强信鸽service的复活机会，请根据需要添加 -->
+            <intent-filter android:priority="0x7fffffff" >
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+                <action android:name="android.intent.action.MEDIA_REMOVED" />
+                <action android:name="android.intent.action.MEDIA_CHECKING" />
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 【必须】 (2.30及以上版新增)展示通知的activity -->
+        <!-- 【注意】 如果被打开的activity是启动模式为SingleTop，SingleTask或SingleInstance，请根据通知的异常自查列表第8点处理-->
+        <activity
+            android:name="com.tencent.android.tpush.XGPushActivity"
+            android:exported="false" >
+            <intent-filter>
+                <!-- 若使用AndroidStudio，请设置android:name="android.intent.action"-->
+                <action android:name="android.intent.action" />
+            </intent-filter>
+        </activity>
+        <meta-data android:value="999999999" android:name="UMENG_CHANNEL"/>
+
+        !-- 【必须】 增强xg_service存活率 -->
+        <service
+            android:name="com.tencent.android.tpush.service.XGDaemonService"
+            android:process=":xg_service_v4" />
+        <service
+            android:name="com.tencent.android.tpush.XGDownloadService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service android:name="com.baidu.location.f" android:enabled="true"
+            android:process=":remote">
+            <!--  		<intent-filter>
+                        <action android:name="com.baidu.location.service_v2.9"></action>
+                    </intent-filter>-->
+        </service>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Am1YUADsvIqhOzNXFRo15xriOqGoSNki" />
+        <!-- 【必须】 信鸽service -->
+        <service
+            android:name="com.tencent.android.tpush.service.XGPushServiceV4"
+            android:exported="true"
+            android:persistent="true"
+            android:process=":xg_service_v4" />
+        <receiver android:name="receiver.MessageReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <!-- 接收消息透传 -->
+                <action android:name="com.tencent.android.tpush.action.PUSH_MESSAGE" />
+                <!-- 监听注册、反注册、设置/删除标签、通知被点击等处理结果 -->
+                <action android:name="com.tencent.android.tpush.action.FEEDBACK" />
+            </intent-filter>
+        </receiver>
+        <!-- 【必须】 通知service，此选项有助于提高抵达率 -->
+        <service
+            android:name="com.tencent.android.tpush.rpc.XGRemoteService"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.maidiantech.PUSH_ACTION" />
+            </intent-filter>
+        </service>
+
+        <!-- 【必须】 【注意】authorities修改为 包名.AUTH_XGPUSH, 如demo的包名为：com.qq.xgdemo-->
+        <provider
+            android:name="com.tencent.android.tpush.XGPushProvider"
+            android:authorities="com.maidiantech.AUTH_XGPUSH"
+            android:exported="true"
+            />
+        <!-- 【必须】 【注意】authorities修改为 包名.TPUSH_PROVIDER, 如demo的包名为：com.qq.xgdemo-->
+        <provider
+            android:name="com.tencent.android.tpush.SettingsContentProvider"
+            android:authorities="com.maidiantech.TPUSH_PROVIDER"
+            android:exported="false" />
+        <!-- 【必须】 【注意】authorities修改为 包名.TENCENT.MID.V3, 如demo的包名为：com.qq.xgdemo-->
+        <provider
+            android:name="com.tencent.mid.api.MidProvider"
+            android:authorities="com.maidiantech.TENCENT.MID.V3"
+            android:exported="true" >
+        </provider>
+
+
+
+
+
+        <!-- 【必须】 请将YOUR_ACCESS_ID修改为APP的AccessId，“21”开头的10位数字，中间没空格 -->
+        <meta-data
+            android:name="XG_V2_ACCESS_ID"
+            android:value="2100337606" />
+        <!-- 【必须】 请将YOUR_ACCESS_KEY修改为APP的AccessKey，“A”开头的12位字符串，中间没空格 -->
+        <meta-data
+            android:name="XG_V2_ACCESS_KEY"
+            android:value="AW35SU98CT8T" />
+
+        <!--<meta-data-->
+            <!--android:name="XG_V4_CHANNEL_ID"-->
+            <!--android:value="1234567" />-->
+
+        <meta-data android:value="58c60bf59f06fd4c5f000ef3" android:name="UMENG_APPKEY"></meta-data>
+
+        <!--<meta-data android:value="${UMENG_CHANNEL_VALUE}" android:name="UMENG_CHANNEL"/>-->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-feature android:name="android.hardware.camera" />
+</manifest>

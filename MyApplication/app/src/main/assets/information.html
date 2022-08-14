@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>资讯</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="viewport"
+	    content="width=device-width,initial-scale=1,user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<!--  上传新的css样式  -->
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/information.css">
+	 <script src="js/bos.js"></script>
+	 <script src="js/jquery.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<!-- 头部图片 -->
+			<img src="{listpic}" alt="" class="img1"  onerror="javascript:this.src='http://www.zhongkechuangxiang.com/plus/img/zhanwei.jpg'">
+			<p>资讯</p>
+		</div>
+		<div class="title">
+			{{title}}
+		</div>
+		<div class="time">
+			<span></span>
+			<p>{souse}</p>
+		</div>
+		<div  id="note">
+			<div class="choice">
+				<p>编者按</p>
+			</div>
+			<div  id="biology" class="to-write">{leaderette}</div>
+		</div>
+		<div class="body">
+			<!-- body -->
+			{{body}}
+		</div>
+		<div class="whole">
+		<div class="introduction">
+			<div class="choice">
+				<p>{{title_source}}</p>
+			</div>
+		</div>
+		<div class="main" id="one">
+			<a href="a00">
+				<!-- 右图 -->
+				<div class="left">
+					<img src="{url}" alt="" onerror="javascript:this.src='http://www.zhongkechuangxiang.com/plus/img/zhanwei.jpg'">
+				</div>
+				<div class="right">
+					<!-- 右面字 -->
+					<div class="right-up" id="one-word">{{title0}}</div>
+					<div class="right-down" >
+						<span>{typeid1}</span>
+						<!-- 浏览数 -->
+						<em>{click1}</em>
+						<img src="./images/chakan@2x.png" alt="">
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="main"  id="two">
+			<a href="a11">
+				<!-- 右图 -->
+				<div class="left">
+					<img src="{ur2}" alt="" onerror="javascript:this.src='http://www.zhongkechuangxiang.com/plus/img/zhanwei.jpg'">
+				</div>
+				<div class="right">
+					<!-- 右面字 -->
+					<div class="right-up" id="two-word">{{title1}}</div>
+					<div class="right-down">
+						<span>{typeid2}</span>
+						<!-- 浏览数 -->
+						<em>{click2}</em>
+						<img src="./images/chakan@2x.png" alt="">
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="main" id="three">
+			<a href="a22">
+				<!-- 右图 -->
+				<div class="left">
+					<img src="{ur3}" alt="" onerror="javascript:this.src='http://www.zhongkechuangxiang.com/plus/img/zhanwei.jpg'">
+				</div>
+				<div class="right">
+					<!-- 右面字 -->
+					<div class="right-up" id="three-word">{{title2}}</div>
+					<div class="right-down">
+						<span>{typeid3}</span>
+						<!-- 浏览数 -->
+						<em>{click3}</em>
+						<img src="./images/chakan@2x.png" alt="" >
+					</div>
+				</div>
+			</a>
+		</div>
+		</div>
+
+		<!-- 科技资源 -->
+		<div  class="technological">
+			{kejiziyuan}
+		</div>
+
+	</div>
+</body>
+</html>
+<script>
+if($(".release").length==0){
+		$(".technological").hide();
+	}
+
+	$(document).ready(function() {	
+		// 编者按
+		var note=$('.to-write').text();
+		
+        		// 编者按
+		if(note==""){
+			$("#note").hide(); 
+		}
+		// 一阅读
+		var one=$('#one-word').text();
+		if(one==""){
+			$("#one").hide(); 
+		}
+		// 二阅读
+		var two=$('#two-word').text();
+		if(two==""){
+			$("#two").hide(); 
+		}
+		// 三阅读
+		var three=$('#three-word').text();
+		if(three==""){
+			$("#three").hide(); 
+		}
+		if(one==""&&two==""&&three==""){
+			$(".whole").hide();
+		}
+
+	});
+</script>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoRelativeLayout
+    android:id="@+id/bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/whrite"
+        >
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/shezhi_backs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/back"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="科研机构"
+            android:id="@+id/titledes"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:textColor="#778aff"
+            android:textSize="@dimen/biaoti"/>
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/nav_sousuo"
+            android:layout_marginRight="19dp"
+            android:layout_gravity="center"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/title_lay"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:background="#778aff"
+        android:visibility="visible"
+        android:gravity="center_vertical"
+        android:layout_height="35dp">
+        <TextView
+            android:id="@+id/titlexuanting"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中国科学院北京分院"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+    <view.RefreshListView
+        android:layout_below="@+id/title_lay"
+        android:id="@+id/listview"
+        style="@style/listview_style1"
+        addHeader="true"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        />
+    <ImageView
+        android:layout_below="@+id/title_lay"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/img"
+        />
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progress"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/animation_list" />
+
+
+</com.chenantao.autolayout.AutoRelativeLayout>

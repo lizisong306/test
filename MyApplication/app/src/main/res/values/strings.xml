@@ -1,0 +1,136 @@
+<resources>
+
+    <string name="menu_item1">拉黑这个的来源</string>
+    <string name="menu_item2">菜单项2</string>
+    <string name="menu_item3">不喜欢这类信息</string>
+    <string name="menu_item4">菜单项4</string>
+    <string name="menu_item5">菜单项5</string>
+    <string name="poigram">Poigram</string>
+    <string name="snowbean">Snowbean</string>
+	
+
+    <string name="not_supported">不被支持</string>
+    <string name="searching_">正在搜索…</string>
+    <string name="text_not_found">未发现文本</string>
+    <string name="dismiss">解除</string>
+    <string name="no_further_occurrences_found">未发现更多实例。</string>
+
+    <string name="okay">确定</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+
+    <string name="copied_to_clipboard">已复制到剪贴板</string>
+    <string name="no_text_selected">未选择文本</string>
+    <string name="nothing_to_save">没有要保存的内容</string>
+    <string name="print_failed">未能打印</string>
+    <string name="document_has_changes_save_them_">文档已变更，保存变更吗？</string>
+    <string name="draw_annotation">作批注</string>
+    <string name="select_text">选择文本</string>
+    <string name="format_currently_not_supported">当前不支持此格式</string>
+    <string name="entering_reflow_mode">输入重排模式</string>
+    <string name="leaving_reflow_mode">正在离开重排模式</string>
+    <string name="enter_password">输入密码</string>
+    <string name="cannot_open_document">无法打开文档</string>
+    <string name="cannot_open_document_Reason">无法打开文档： %1$s</string>
+    <string name="cannot_open_buffer">无法打开缓冲器</string>
+    <string name="cannot_open_file_Path">无法打开文件：%1$s</string>
+
+    <string name="fill_out_text_field">填充文本字段</string>
+    <string name="choose_value">选择值</string>
+    <string-array name="kedu">
+        <item>面谈</item>
+        <item>20万</item>
+        <item>40万</item>
+        <item>60万</item>
+        <item>80万</item>
+        <item>100万以上</item>
+    </string-array>
+
+    <string-array name="keduvalue">
+        <item>0</item>
+        <item>20</item>
+        <item>40</item>
+        <item>60</item>
+        <item>80</item>
+        <item>100</item>
+    </string-array>
+    <string-array name="kedutext">
+        <item>不紧急</item>
+        <item>一般</item>
+        <item>紧急</item>
+        <item>非常紧急</item>
+    </string-array>
+    <string-array name="keduvalue3">
+        <item>0</item>
+        <item>33</item>
+        <item>66</item>
+        <item>100</item>
+    </string-array>
+
+
+    <string-array name="adBlockUrl">
+        <item>ubmcmm.baidustatic.com</item>
+        <item>cpro2.baidustatic.com</item>
+        <item>cpro.baidustatic.com</item>
+        <item>s.lianmeng.360.cn</item>
+        <item>nsclick.baidu.com</item>
+        <item>pos.baidu.com</item>
+        <item>cbjs.baidu.com</item>
+        <item>cpro.baidu.com</item>
+        <item>images.sohu.com/cs/jsfile/js/c.js</item>
+        <item>union.sogou.com/</item>
+        <item>sogou.com/</item>
+        <item>a.baidu.com</item>
+        <item>c.baidu.com</item>
+        <item>pstatp.com</item>
+        <item>sspsky.com</item>
+    </string-array>
+    <string name="app_name">钛领在线</string>
+
+    <string name="search">搜索</string>
+    <string name="search_history">搜索历史</string>
+    <string name="more">更多</string>
+    <string name="recent_hot">近期热点</string>
+    <string name="filter_vcode">0123456789abcdefghijklmnopqrstuvwxyz.</string>
+    <!-- 欢迎界面-->
+    <string name="title_show">项目多，人才多，专家多...</string>
+    <string name="title_tip">只看我想看的...</string>
+    <string name="title_message">私人定制开启新天地</string>
+    <string name="cancel">取消</string>
+    <string name="str_confirm">确定</string>
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="app_tip">提示</string>
+    <string name="html_text">
+<![CDATA[
+<html>
+
+ <body>
+  <center><h2 >钛领科技服务条款</h2></center><p>
+	<div>
+		&nbsp;&nbsp;&nbsp;&nbsp;为使用腾讯的服务，您应当阅读并遵守《服务协议》
+			（以下简称“本协议”）和《号码规则》。请您务必审
+			慎阅读、充分理解各条款内容，特别是免除或者限制责
+			任的条款、管辖与法律适用条款，以及开通或使用某项
+			服务的单独协议。限制、免责条款可能以黑体加粗或加
+			下划线的形式提示您重点注意。除非您已阅读并接受本
+			协议所有条款，否则您无权使用腾讯提供的服务。您使
+			用腾讯的服务即视为您已阅读并同意上述协议的约束。
+	</div><p>
+	<div>
+		&nbsp;&nbsp;&nbsp;&nbsp;如果您未满18周岁，请在法定监护人的陪同下阅读本协议，并特别注意未成年人使用条款
+	</div><p>
+
+	<div>
+		一、【协议的范围】
+		<ul type="circle" style="margin-top:10px">
+			<div>
+			如果您未满18周岁，请在法定监护人的陪同下阅读本协议，并特别注意未成年人使用条款如果您未满18周岁，请在法定监护人的陪同下阅读本协议，并特别注意未成年人使用条款.
+			<div>
+
+	<p style="text-align: right;">北京中科创享科技发展有限公司</p>
+ </body>
+</html>
+]]>
+    </string>
+</resources>

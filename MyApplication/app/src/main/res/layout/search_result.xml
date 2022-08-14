@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ptr="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:clipToPadding="true"
+
+  >
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/lansecolor"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/search_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:src="@mipmap/back"
+            />
+
+        <TextView
+
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16px"
+            android:layout_marginBottom="16px"
+            android:gravity="center"
+            android:text="搜索"
+            android:textColor="@color/whrite"
+            android:textSize="@dimen/biaoti"
+            />
+        <ImageView
+            android:layout_width="28px"
+            android:layout_height="28px"
+            android:layout_marginRight="50px"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/shuju_line"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/shuju_img"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/none"/>
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#EFEFEF">
+        <ListView
+
+            android:id="@+id/search_listview_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:divider="@null"
+            android:layout_marginBottom="24px"
+            ></ListView>
+    </LinearLayout>
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progress"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/animation_list" />
+</RelativeLayout>
+
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:layout_marginRight="38px"
+         android:layout_marginTop="24px"
+         android:layout_marginLeft="40px"
+         android:background="@mipmap/search_bg">
+         <LinearLayout
+             android:layout_marginTop="26px"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:gravity="center">
+             <TextView
+                 android:id="@+id/type_name"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="26px"
+                 android:layout_marginLeft="22px"
+                 android:text="政策"
+                 android:textColor="@color/lansecolor"/>
+             <TextView
+                 android:layout_weight="1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:gravity="right"
+                 android:layout_marginRight="27px"
+                 android:text="95条"
+                 android:textColor="@color/lansecolor"/>
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+             <TextView
+                 android:layout_marginLeft="22px"
+                 android:layout_marginTop="26px"
+                 android:layout_width="match_parent"
+                 android:layout_height="2px"
+                 android:background="#E9E9E9"
+                 android:layout_marginRight="22px"/>
+             <ListView
+                 android:id="@+id/search_listview_info"
+                 android:layout_marginLeft="22px"
+                 android:layout_width="match_parent"
+                 android:layout_height="480px"
+                 android:layout_marginRight="22px"
+                 android:scrollbars="none"
+                 android:fadingEdge="none"
+                 android:overScrollMode="never"
+                 ></ListView>
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_marginTop="10px"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:gravity="center">
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="查看更多内容"
+                 android:textSize="26px"
+                 android:textColor="@color/lansecolor"
+                 />
+             <ImageView
+                 android:layout_marginLeft="5px"
+                 android:layout_width="18px"
+                 android:layout_height="18px"
+                 android:background="@mipmap/arrow"/>
+         </LinearLayout>
+     </LinearLayout>-->
+
+
+
+</com.chenantao.autolayout.AutoLinearLayout>

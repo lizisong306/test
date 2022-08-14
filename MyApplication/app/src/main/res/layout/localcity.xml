@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:id="@+id/detail_ra"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:Android="http://schemas.android.com/tools"
+app:layout_auto_basewidth="height"
+app:layout_auto_baseheight="width"
+android:fitsSystemWindows="true"
+android:clipToPadding="true">
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@color/white"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="@color/white"
+            >
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/information_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/zixun_back_details"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择服务城市"
+                android:layout_centerInParent="true"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/biaoti"/>
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="0.5px"
+                android:background="@color/lines"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/txt"
+        android:layout_below="@+id/title"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/dibiaos"
+            />
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/city"
+            android:text="上海"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_below="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cityid"
+        android:layout_marginTop="62px"
+        android:text="服务城市"
+        android:textColor="@color/text_black"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"
+
+
+        />
+    <GridView
+        android:layout_marginTop="30px"
+        android:layout_below="@+id/cityid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:numColumns="3"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:id="@+id/gradview">
+
+    </GridView>
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginTop="30px"-->
+        <!--android:layout_below="@+id/cityid"-->
+        <!--&gt;-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/citylist"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/beijing"-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/beijing"-->
+                    <!--/>-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/weifang"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:background="@drawable/local"-->
+                    <!--/>-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/qingdao"-->
+                    <!--android:layout_marginRight="20dp"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:background="@drawable/qingdao"-->
+                    <!--/>-->
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_marginTop="30px"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/zhengzhou"-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/zhengzhou"-->
+                    <!--/>-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/dezhou"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:background="@drawable/dezhou"-->
+                    <!--/>-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/liaocheng"-->
+                    <!--android:layout_marginRight="20dp"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:background="@drawable/liaocheng"-->
+                    <!--/>-->
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_marginTop="30px"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/jimo"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/jimo"-->
+                    <!--/>-->
+                <!--<ImageView-->
+                    <!--android:visibility="gone"-->
+                    <!--android:id="@+id/laixi"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:background="@drawable/laixi"-->
+                    <!--/>-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/shaoxing"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:background="@mipmap/shaoxing"-->
+                    <!--/>-->
+
+            <!--</RelativeLayout>-->
+
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+
+
+
+
+
+
+</com.chenantao.autolayout.AutoRelativeLayout>

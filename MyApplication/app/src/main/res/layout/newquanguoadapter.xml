@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoRelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:background="@drawable/shape"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:orientation="vertical">
+    <view.ZQImageViewRoundOval
+        android:id="@+id/item"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="337px"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/pluse_dianzixinxi"
+        />
+</com.chenantao.autolayout.AutoRelativeLayout>

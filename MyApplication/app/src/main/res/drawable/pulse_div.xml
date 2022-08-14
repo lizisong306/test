@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="40px"
+    android:insetRight="40px"
+    android:drawable="@color/line_hui">
+</inset>

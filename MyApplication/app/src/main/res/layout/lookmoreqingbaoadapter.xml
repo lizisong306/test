@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoRelativeLayout
+    android:id="@+id/bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:background="#F1F0F6"
+    android:orientation="vertical">
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/hangqingbg"-->
+        <!--android:layout_marginTop="4dp"-->
+        <!--android:layout_marginBottom="15dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:background="@color/white"-->
+        <!--android:gravity="center_vertical">-->
+        <!--<ImageView-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginBottom="15dp"-->
+            <!--android:id="@+id/hangyeicon"-->
+            <!--android:layout_width="75dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:background="@mipmap/information_placeholder"/>-->
+
+
+        <!--<TextView-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_toRightOf="@+id/hangyeicon"-->
+            <!--android:id="@+id/xytitle"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="ATT试用商用5G通信服务 英"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textColor="#181818"-->
+            <!--android:singleLine="false"-->
+            <!--android:maxLines="2"-->
+            <!--android:ellipsize="marquee"-->
+            <!--android:lineSpacingExtra="14px"/>-->
+        <!--<TextView-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_toRightOf="@+id/hangyeicon"-->
+            <!--android:layout_below="@+id/xytitle"-->
+            <!--android:id="@+id/xiangqing"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text=""-->
+            <!--android:maxLines="4"-->
+            <!--android:textSize="11sp"-->
+            <!--android:textColor="#4d4d4d" />-->
+
+        <!--<TextView-->
+            <!--android:layout_marginBottom="15dp"-->
+            <!--android:layout_alignBottom="@+id/hangyeicon"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_toRightOf="@+id/hangyeicon"-->
+            <!--android:layout_below="@+id/xytitle"-->
+            <!--android:gravity="bottom"-->
+            <!--android:id="@+id/hangyefenxi"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="￥ 0元"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textColor="#3385ff" />-->
+
+        <!--<TextView-->
+            <!--android:layout_marginBottom="15dp"-->
+
+            <!--android:layout_below="@+id/xytitle"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:gravity="center"-->
+            <!--android:id="@+id/chakan"-->
+            <!--android:background="@drawable/shap_blue"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:text="查看"-->
+            <!--android:textSize="12sp"-->
+            <!--android:textColor="#3385ff" />-->
+
+    <!--</RelativeLayout>-->
+    <!--行业解析-->
+    <LinearLayout
+        android:visibility="visible"
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/hangye"
+        android:background="@color/white"
+        >
+        <RelativeLayout
+            android:layout_margin="15dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/hangye_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/icon_hangyejiexi"
+                android:drawablePadding="5dp"
+                android:textColor="#181818"
+                android:textSize="15sp"
+                android:text="行业解析"
+                />
+            <TextView
+                android:id="@+id/hangye_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/icon_arrow"
+                android:drawablePadding="5dp"
+                android:layout_alignParentRight="true"
+                android:textColor="#3e3e3e"
+                android:textSize="12sp"
+                android:text="查看更多"
+                />
+        </RelativeLayout>
+        <TextView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:background="@color/lines"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="15dp"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+            <ImageView
+                android:id="@+id/hangyeicon"
+                android:layout_width="75dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:background="@mipmap/information_placeholder"/>
+
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/hangyeicon"
+                android:id="@+id/xytitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ATT试用商用5G通信服务 英"
+                android:textSize="14sp"
+                android:textColor="#181818"
+                android:singleLine="false"
+                android:maxLines="2"
+                android:ellipsize="marquee"
+                android:lineSpacingExtra="14px"/>
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/hangyeicon"
+                android:layout_below="@+id/xytitle"
+                android:id="@+id/xiangqing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:maxLines="3"
+                android:textSize="11sp"
+                android:textColor="#4d4d4d" />
+
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:layout_alignBottom="@+id/hangyeicon"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/hangyeicon"
+                android:layout_below="@+id/xytitle"
+                android:gravity="bottom"
+                android:id="@+id/hangyefenxi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥ 0元"
+                android:textSize="14sp"
+                android:textColor="#3385ff" />
+
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/xytitle"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:id="@+id/chakan"
+                android:background="@drawable/shap_blue"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:text="查看"
+                android:textSize="12sp"
+                android:textColor="#3385ff" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</com.chenantao.autolayout.AutoRelativeLayout>

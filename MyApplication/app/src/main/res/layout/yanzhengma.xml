@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:fitsSystemWindows="true"
+    android:background="@color/whrite"
+    android:clipToPadding="true">
+    <LinearLayout
+
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="@color/whrite"
+            >
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/login_backs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/back"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户登录"
+                android:layout_centerInParent="true"
+                android:textColor="@color/whrite"
+                android:textSize="@dimen/biaoti"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:background="@color/lines"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text_phone"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@color/lansecolor"
+        android:text="验证手机号"/>
+
+    <TextView
+        android:id="@+id/send"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/lansecolor"
+        android:text="再次发送 (60)"/>
+
+    <LinearLayout
+        android:layout_marginTop="28dp"
+        android:id="@+id/layout"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/text_phone"
+        android:layout_centerHorizontal="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            >
+            <EditText
+                android:textCursorDrawable="@drawable/edit_cursor_color"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@mipmap/shurukuang_bg"
+                android:layout_marginLeft="12px"
+                android:text=""
+                android:maxLength="1"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:inputType="number"
+                android:textSize="18sp"
+                android:textColorHint="#666666"
+                android:textColor="#666666"
+                android:id="@+id/edite1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            >
+
+            <EditText
+                android:textCursorDrawable="@drawable/edit_cursor_color"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@mipmap/shurukuang_bg"
+                android:layout_marginLeft="12px"
+                android:text=""
+                android:textStyle="bold"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textSize="18sp"
+                android:inputType="number"
+                android:textColorHint="#666666"
+                android:textColor="#666666"
+                android:id="@+id/edite2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            >
+            <EditText
+                android:textCursorDrawable="@drawable/edit_cursor_color"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@mipmap/shurukuang_bg"
+                android:layout_marginLeft="12px"
+                android:text=""
+                android:textStyle="bold"
+                android:gravity="center"
+                android:maxLength="1"
+                android:inputType="number"
+                android:textSize="18sp"
+                android:textColorHint="#666666"
+                android:textColor="#666666"
+                android:id="@+id/edite3" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            >
+            <EditText
+                android:textCursorDrawable="@drawable/edit_cursor_color"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@mipmap/shurukuang_bg"
+                android:layout_marginLeft="12px"
+                android:text=""
+                android:textStyle="bold"
+                android:maxLength="1"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColorHint="#666666"
+                android:inputType="number"
+                android:textColor="#666666"
+                android:id="@+id/edite4" />
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:id="@+id/progress"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/animation_list" />
+
+</com.chenantao.autolayout.AutoRelativeLayout>

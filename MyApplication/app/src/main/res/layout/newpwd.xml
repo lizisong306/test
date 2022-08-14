@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <ImageView
+            android:id="@+id/new_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/back"
+            android:layout_marginLeft="24px"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置新密码"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/biaoti"
+            android:textColor="@color/lansecolor"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#bfbfbf"/>
+    <LinearLayout
+        android:layout_marginTop="90px"
+        android:layout_width="672px"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@mipmap/retrieve_password_number">
+
+        <EditText
+            android:id="@+id/new_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="新密码"
+            android:textSize="28px"
+            android:textColor="@color/colortitle"
+            android:paddingLeft="16px"
+            android:background="@null"
+            android:gravity="left|center"
+            android:inputType="number"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="672px"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@mipmap/retrieve_password_code">
+
+        <EditText
+            android:id="@+id/right_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="确认密码"
+            android:textSize="28px"
+            android:textColor="@color/colortitle"
+            android:paddingLeft="16px"
+            android:background="@null"
+            android:gravity="left|center"
+            android:layout_weight="1"
+            android:inputType="number"
+            />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/new_queding"
+        android:layout_marginTop="50px"
+        android:layout_width="672px"
+        android:layout_height="70px"
+        android:background="@mipmap/retrieve_password_sure"
+        android:text="确定"
+        android:textSize="30px"
+        android:textColor="@color/white"
+
+        />
+
+</com.chenantao.autolayout.AutoLinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/detail_ra"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:Android="http://schemas.android.com/tools"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:fitsSystemWindows="true"
+
+    android:orientation="vertical"
+    android:clipToPadding="true"
+    android:background="@color/white"
+    >
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottmon"
+        android:background="@color/white"/>
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginTop="130px"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+       >
+        <TextView
+            android:id="@+id/pulse_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lansecolor"
+            android:layout_marginTop="15px"
+            android:text="请选择您感兴趣的领域"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="@dimen/biaoti"
+            />
+
+    </LinearLayout>
+
+    <GridView
+                android:layout_below="@+id/layout"
+                android:layout_marginTop="90px"
+                android:id="@+id/bamai_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="39px"
+                android:layout_marginRight="39px"
+                android:numColumns="3"
+                android:layout_above="@+id/bottmon"
+                android:layout_gravity="center"
+                android:horizontalSpacing="24px"
+                android:verticalSpacing="24px">
+    </GridView>
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@mipmap/bg_img">
+    <ImageView
+        android:id="@+id/bottmon"
+        android:layout_width="wrap_content"
+
+        android:background="@mipmap/tab_button_close"
+
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+</com.chenantao.autolayout.AutoRelativeLayout>

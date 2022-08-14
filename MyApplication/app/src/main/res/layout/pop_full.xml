@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88000000" >
+
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/layout_photo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_head"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#00ACED"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:drawablePadding="20dp"
+                android:gravity="center"
+                android:text="企业用户" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/base_horizontal_line" >
+        </View>
+
+        <RelativeLayout
+
+            android:background="@drawable/shape_mores"
+            android:id="@+id/layout_choose"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:clickable="true" >
+
+            <TextView
+                android:textColor="#00ACED"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:drawablePadding="20dp"
+                android:gravity="center"
+                android:text="个人用户" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:background="#00000000" >
+        </View>
+
+        <RelativeLayout
+            android:id="@+id/layout_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:background="@drawable/shape">
+
+            <TextView
+                android:textColor="#00ACED"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:drawablePadding="20dp"
+                android:gravity="center"
+                android:text="取消" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

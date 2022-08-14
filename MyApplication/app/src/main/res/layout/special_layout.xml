@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:clipToPadding="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/spe_linelayout"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="@color/whrite"
+            android:visibility="visible"
+            android:id="@+id/spe_line"
+            >
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/spe_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/back"
+                android:layout_alignParentLeft="true"
+                />
+            <TextView
+               android:paddingRight="29px"
+                android:paddingLeft="100px"
+                android:maxLines="1"
+                android:ellipsize="marquee"
+                android:id="@+id/spe_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:visibility="visible"
+                android:layout_centerInParent="true"
+                android:textColor="@color/title_head"
+                android:textSize="@dimen/biaoti"/>
+            <ImageView
+                android:visibility="gone"
+                android:layout_marginRight="19px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@mipmap/share"
+
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:background="@color/lines"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <view.RefreshListView
+            android:id="@+id/spe_listview"
+            style="@style/listview_style"
+            addHeader="true"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+
+            />
+        <ImageView
+            android:layout_above="@+id/spe_listview"
+            android:layout_width="match_parent"
+            android:layout_height="15px"
+            android:src="@drawable/img"/>
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progress"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@drawable/animation_list" />
+    </RelativeLayout>
+
+
+
+
+</com.chenantao.autolayout.AutoLinearLayout>

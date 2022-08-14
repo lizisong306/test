@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoRelativeLayout
+    android:id="@+id/bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:layout_centerInParent="true"
+
+    android:clipToPadding="true"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/titlelay"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_marginLeft="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/title"
+            android:text="基础服务"
+            android:textStyle="bold"
+            android:textColor="#4b4845"
+            android:textSize="14sp"
+            android:gravity="center_vertical"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:background="@color/lines"
+            />
+        <view.HorizontalListView
+        android:id="@+id/horizonlist"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/white"
+        android:visibility="visible" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/fragmentlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_marginLeft="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/fragmenttitle"
+            android:text="基础服务"
+            android:textStyle="bold"
+            android:textColor="#4b4845"
+            android:textSize="14sp"
+            android:gravity="center_vertical"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:background="@color/lines"
+            />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="166dp"
+            android:id="@+id/fragment"
+            android:orientation="vertical" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical" >
+                <LinearLayout
+                    android:id="@+id/viewGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <!--间隔-->
+    <LinearLayout
+        android:id="@+id/jiange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_below="@+id/titlelay"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:background="@color/lines"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="#f6f6f6"
+            />
+    </LinearLayout>
+</com.chenantao.autolayout.AutoRelativeLayout>

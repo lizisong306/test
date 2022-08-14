@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:clipToPadding="true"
+    >
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:id="@+id/titlecontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关于"
+                android:layout_centerInParent="true"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/biaoti"/>
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/need_add"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="37px"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/need_add"
+                android:layout_marginRight="24px"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:visibility="visible"
+                android:id="@+id/about_backs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/back"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:background="@color/lines"
+            />
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_weight="1"
+        android:layout_below="@+id/title"
+        android:layout_above="@+id/chakan"
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <view.ProgressWebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <TextView
+        android:id="@+id/chakan"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="查看"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:background="#3385ff"
+        android:gravity="center"
+        />
+
+
+</com.chenantao.autolayout.AutoRelativeLayout>

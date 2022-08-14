@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:background="#F6F6F6">
+    <LinearLayout
+        android:id="@+id/xiangmu_lay"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/xiangmu_lay1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="15dp"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+            <ImageView
+                android:id="@+id/xianmgmu1"
+                android:layout_width="100dp"
+                android:layout_height="66.5dp"
+                android:scaleType="centerCrop"
+                android:background="@mipmap/information_placeholder"/>
+
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/xianmgmu1"
+                android:id="@+id/xmtitle1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ATT试用商用5G通信服务 英"
+                android:textSize="14sp"
+                android:textColor="#181818"
+                android:singleLine="false"
+                android:lines="2"
+                android:ellipsize="marquee"
+                android:lineSpacingExtra="14px"/>
+
+            <TextView
+                android:layout_alignBottom="@+id/xianmgmu1"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/xianmgmu1"
+                android:layout_below="@+id/xmtitle1"
+                android:gravity="bottom"
+                android:id="@+id/lanyuan1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所属领域:化工"
+                android:textSize="11sp"
+                android:textColor="#4d4d4d" />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:background="@color/lines"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/rencai_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:id="@+id/rencai_lay1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="15dp"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+            <view.RoundImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/rencai_img1"
+                android:src="@mipmap/touxiangzhanwei"
+                android:background="@mipmap/touxiangzhanwei"
+                />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/rencai_img1"
+                android:id="@+id/rencai_title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="谢霆锋"
+                android:layout_toLeftOf="@+id/rank1"
+                android:textSize="14sp"
+                android:textColor="#181818"
+                android:singleLine="false"
+                android:lines="1"
+                android:ellipsize="marquee"
+                />
+
+            <TextView
+                android:layout_alignBottom="@+id/rencai_img1"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/rencai_img1"
+                android:layout_below="@+id/rencai_title1"
+                android:id="@+id/rencai_lingyu1"
+                android:gravity="bottom"
+                android:layout_toLeftOf="@+id/rank1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所属领域:化工"
+                android:ellipsize="marquee"
+                android:maxLines="1"
+                android:textSize="11sp"
+                android:textColor="#4d4d4d" />
+
+            <TextView
+                android:id="@+id/rank1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="专家"
+                android:textSize="13sp"
+                android:textColor="#3e3e3e"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:background="@color/lines"
+            />
+    </LinearLayout>
+
+
+</com.chenantao.autolayout.AutoRelativeLayout>

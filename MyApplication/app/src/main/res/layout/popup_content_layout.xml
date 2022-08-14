@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tankuang"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/menu_item1"
+                style="@style/menu_item_text_style"
+                android:drawableLeft="@mipmap/lahei"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="20dp"
+                android:text="拉黑这个的来源" />
+
+            <View
+                android:visibility="gone"
+                style="@style/menu_item_divider_style"/>
+
+            <TextView
+
+                android:id="@+id/menu_item2"
+                android:visibility="gone"
+                style="@style/menu_item_text_style"
+                android:drawablePadding="20dp"
+                android:text="@string/menu_item2" />
+
+            <View
+                android:visibility="gone"
+                style="@style/menu_item_divider_style"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5px"
+                android:id="@+id/line"
+                android:background="@color/lines"
+                android:visibility="visible"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+
+                />
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/menu_item3"
+                android:drawableLeft="@mipmap/buxihuan"
+                style="@style/menu_item_text_style"
+                android:drawablePadding="20dp"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:text="不喜欢这类信息" />
+
+
+
+
+        <!--<View-->
+            <!--style="@style/menu_item_divider_style"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/menu_item4"-->
+            <!--style="@style/menu_item_text_style"-->
+            <!--android:text="@string/menu_item4" />-->
+
+        <!--<View-->
+            <!--style="@style/menu_item_divider_style"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/menu_item5"-->
+            <!--style="@style/menu_item_text_style"-->
+            <!--android:text="@string/menu_item5" />-->
+    </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:background="@color/lines"
+            android:visibility="gone"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerInParent="true"
+            />
+
+</RelativeLayout>

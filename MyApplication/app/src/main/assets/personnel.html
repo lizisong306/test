@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>人才</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="viewport"
+	    content="width=device-width,initial-scale=1,user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<!--  上传新的css样式  -->
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/personnel.css">
+	 <script src="js/bos.js"></script>
+	
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="header-imgs">
+				<img src="{img}" alt=""  onerror="javascript:this.src='http://www.zhongkechuangxiang.com/plus/activity/images/tou@2x.png'">
+			</div>
+			<span class="title">{username}</span>
+			<p>专家</p>
+			<em class="academician">{yuanshi}</em>
+		</div>
+		<!-- 所属领域 -->
+		<div class="whole-choice">
+			<div class="choice">
+				<p>职称</p>
+			</div>
+			<div  class="biology">{rank}</div>
+		</div>
+		<div class="whole-choice"  id="research_main">
+			<div class="choice">
+				<p>研究领域</p>
+			</div>
+			<div  class="biology"  id="research">{study_area}</div>
+		</div>
+		<div class="whole-choice"  id="achievements_main">
+			<div class="choice">
+				<p>成果&荣誉</p>
+			</div>
+			<div  class="biology"  id="achievements">{reward}</div>
+		</div>
+		<div class="whole-choice"  id="project_main">
+			<div class="choice">
+				<p>承担科研项目</p>
+			</div>
+			<div  class="biology"  id="project">{project}</div>
+		</div>
+		<div class="introduction"  id="trval">
+			<div class="choice">
+				<p>个人简介</p>
+			</div>
+			<div class="choice-word" id="brief">  <p>{body}</p></div>
+		</div>
+		<!-- 成果与奖励 -->
+		<div class="whole-choice" id="chengguo_main">
+			<div class="choice">
+				<p>成果与奖励</p >
+			</div>
+			<div  class="biology" id="chengguo">{chengguo}</div>
+		</div>
+		<!--  著作-->
+		<div class="whole-choice" id="zhuzuo_main">
+			<div class="choice">
+				<p>著作</p >
+			</div>
+			<div  class="biology" id="zhuzuo">{zhuzuo}</div>
+		</div>
+	</div>
+</body>
+</html>
+ <script src="js/jquery.js"></script>
+<script>
+	$(document).ready(function() {	
+		// 院士
+		var academician=$('.academician').text();
+		if(academician==""){
+			$(".academician").hide(); 
+		}
+		// 研究领域
+		var research=$('#research').text();
+		if(research==""){
+			$("#research_main").hide(); 
+		}
+		// 成果&荣誉
+		var achievements=$('#achievements').text();
+		if(achievements==""){
+			$("#achievements_main").hide(); 
+		}
+		// 承担科研项目
+		var project=$('#project').text();
+		if(project==""){
+			$("#project_main").hide(); 
+		}
+		var chengguo=$('#chengguo').text();
+		if(chengguo==""){
+			$("#chengguo_main").hide();
+		}
+		var zhuzuo=$('#zhuzuo').text();
+		if(zhuzuo==""){
+			$("#zhuzuo_main").hide();
+		}
+		
+	});
+</script>

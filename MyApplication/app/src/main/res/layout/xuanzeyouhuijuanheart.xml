@@ -1,0 +1,41 @@
+<com.chenantao.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:background="#F1F1F1">
+    <RelativeLayout
+        android:layout_marginTop="18dp"
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#ffffff"
+        >
+       <TextView
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="15dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="不使用优惠劵"
+           android:textStyle="bold"
+           android:textColor="#3e3e3e"
+           android:textSize="16sp"
+           />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@mipmap/exit"
+            android:layout_centerVertical="true"
+
+            android:id="@+id/quxiao" />
+    </RelativeLayout>
+    <TextView
+        android:layout_below="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="0.5px"
+        android:background="@color/lines"
+        />
+</com.chenantao.autolayout.AutoRelativeLayout>

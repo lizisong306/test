@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:background="#FFFFFF"
+    android:clipToPadding="true">
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/commontitle" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:background="@drawable/shap_round_xx"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="24dp">
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/sousu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            android:textSize="14sp"
+            android:text="搜索"
+            android:drawableLeft="@mipmap/addsousu"
+
+            />
+    </LinearLayout>
+    <view.RefreshListView
+        android:layout_marginTop="10dp"
+        android:id="@+id/listview"
+        style="@style/listview_style"
+        addHeader="true"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:layout_below="@+id/layout"
+        android:layout_above="@+id/bottmon"
+        android:layout_marginBottom="0.5px"
+        />
+
+    <RelativeLayout
+        android:id="@+id/bottmon"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="55dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:background="@color/lines"
+            />
+        <TextView
+            android:id="@+id/cenel"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:text="取消"
+            />
+        <TextView
+            android:id="@+id/queding"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/lansecolor"
+            android:textSize="17sp"
+            android:text="确定"
+            />
+
+    </RelativeLayout>
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progress"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/animation_list" />
+
+
+</com.chenantao.autolayout.AutoRelativeLayout>

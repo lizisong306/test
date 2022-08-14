@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:gravity="center"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:id="@+id/la"
+        android:layout_width="fill_parent"
+        android:layout_height="43dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/whrite"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+<LinearLayout
+    android:visibility="gone"
+ android:layout_weight="0.5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/dingwei_id"
+        android:layout_width="70px"
+        android:layout_marginLeft="19px"
+        android:layout_marginRight="29px"
+        android:layout_height="50px"
+        android:background="@mipmap/logo"
+        />
+</LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginRight="19px"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="50px"
+            android:orientation="horizontal"
+            android:background="@mipmap/rounded_rectangle"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_marginLeft="20px"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/search"
+                    />
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/rlSearchFrameDelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12px"
+                android:orientation="horizontal"
+                android:layout_weight="30"
+                >
+                <AutoCompleteTextView
+                    android:singleLine="true"
+                    android:imeOptions="actionSearch"
+                    android:popupBackground="@null"
+                    style="@style/AutoCompleteStyle"
+                    android:id="@+id/search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:focusable="true"
+                    android:hint="请输入您搜索的内容"
+                    android:gravity="center_vertical"
+                    android:textSize="25px"
+                    android:completionThreshold="1"
+                    android:textColorHint="#a7a7a7"
+                    android:textColor="#000000"
+
+                    />
+                <ImageView android:id="@+id/ivDeleteText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/search_delete"
+                    android:layout_centerInParent="true"
+                    android:paddingRight="10px"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <HorizontalScrollView
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:id="@+id/hvChannel"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:scrollbars="none"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:background="@color/whrite"
+            android:overScrollMode="always"
+            >
+            <RadioGroup
+                android:background="@color/whrite"
+                android:id="@+id/rgChannel"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+            </RadioGroup>
+        </HorizontalScrollView>
+        <!--  <RelativeLayout
+
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@mipmap/rounded_rectangle">
+              <AutoCompleteTextView
+                  android:singleLine="true"
+                  android:imeOptions="actionSearch"
+                  android:layout_marginBottom="1dp"
+                  android:id="@+id/search"
+                  android:layout_width="0dp"
+                  android:layout_height="50px"
+                  android:hint="请输入您要搜索的内容"
+                  android:textSize="23px"
+                  android:textColorHint="#969696"
+                  android:gravity="center_vertical"
+
+                  android:drawableLeft="@mipmap/search"
+                  android:paddingLeft="25px"
+                  android:drawablePadding="5px"
+
+                  />
+          </RelativeLayout>-->
+
+
+        <RelativeLayout
+            android:layout_marginTop="-2dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20px"
+            >
+            <ImageView
+                android:id="@+id/home_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/search_sousuo"
+                />
+             <TextView
+                 android:id="@+id/search_jilu"
+                 android:layout_centerHorizontal="true"
+                 android:layout_centerInParent="true"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="12sp"
+                 android:text="搜索"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <!--<LinearLayout
+      android:id="@+id/head1"
+      android:layout_width="fill_parent"
+      android:layout_height="70px"
+      android:orientation="horizontal"
+      android:gravity="center"
+      android:background="@color/lansecolor"
+    >
+   <ImageView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_weight="1"
+     android:src="@mipmap/nav_logo"
+     android:paddingRight="30px"
+     android:layout_marginTop="10px"
+     android:layout_marginBottom="10px"
+     android:layout_marginRight="24px"
+     />
+   <LinearLayout
+     android:layout_width="wrap_content"
+     android:layout_height="40px"
+     android:layout_weight="1"
+     android:gravity="center"
+     android:orientation="horizontal"
+    android:paddingRight="25px"
+     >
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="45px"
+         android:textColor="@color/whrite"
+         android:textSize="30px"
+         android:text="潍坊"/>
+     <ImageView
+         android:layout_marginRight="10px"
+         android:layout_width="wrap_content"
+         android:layout_height="40px"
+         android:src="@mipmap/nav_arrow"
+         android:layout_marginLeft="8px"
+         />
+   </LinearLayout>
+
+   <ImageView
+     android:id="@+id/search"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_weight="1"
+     android:src="@mipmap/tab_pulsee"
+     android:layout_marginTop="14px"
+     android:layout_marginBottom="14px"
+     android:layout_marginLeft="99px"
+     android:paddingLeft="30px"
+     />
+  </LinearLayout>-->
+
+
+
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpNewsdaoList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </android.support.v4.view.ViewPager>
+</com.chenantao.autolayout.AutoLinearLayout>

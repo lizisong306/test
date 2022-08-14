@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoRelativeLayout
+    android:id="@+id/bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:layout_centerInParent="true"
+    android:layout_marginRight="38dp"
+    android:clipToPadding="true"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/icon"
+        android:layout_marginRight="38dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/name"
+        android:layout_below="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginRight="38dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#3e3e3e"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:layout_marginBottom="13dp"
+        />
+
+</com.chenantao.autolayout.AutoRelativeLayout>

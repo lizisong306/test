@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="150px"
+    android:orientation="horizontal"
+
+    android:layout_marginLeft="24px">
+    <ImageView
+        android:id="@+id/xuqiuimg"
+        android:layout_marginTop="20px"
+        android:layout_width="200px"
+        android:layout_height="110px"
+
+       />
+    <LinearLayout
+        android:layout_marginTop="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10px"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24px"
+                android:text="需求名称："/>
+            <TextView
+                android:id="@+id/xuqiuname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xxx"
+                android:textSize="22px"
+                android:textColor="#999999"
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/release_dele"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/my_demand_delete"
+                android:layout_marginRight="24px"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24px"
+                android:text="所属领域："/>
+            <TextView
+                android:id="@+id/suoshulinyu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xxx"
+                android:textSize="22px"
+                android:textColor="#999999"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="需求简介："
+                android:textSize="24px"/>
+            <TextView
+                android:id="@+id/xuqiujianjie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xxx"
+                android:textSize="22px"
+                android:textColor="#999999"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:ellipsize="end" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</com.chenantao.autolayout.AutoLinearLayout>

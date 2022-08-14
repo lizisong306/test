@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenantao.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/bg"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bm_imgview"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/img_xiangmu"
+        />
+    <TextView
+        android:id="@+id/bm_txt"
+        android:text="项目dddddd"
+        android:layout_below="@+id/bm_imgview"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="@color/text_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</com.chenantao.autolayout.AutoRelativeLayout>
