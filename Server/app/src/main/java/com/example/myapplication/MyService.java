@@ -52,6 +52,7 @@ public class MyService extends Service {
 //    private PendingIntent pendingIntent;
    static long currenttime = System.currentTimeMillis();
    private static final int TIME_INTERVAL = 10000;
+    PendingIntent pi;
     AlarmManager alarmManager;
     private final AlarmManager.OnAlarmListener mLightAlarmListener
             = new AlarmManager.OnAlarmListener() {
@@ -101,6 +102,9 @@ public class MyService extends Service {
         alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
         //alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, SystemClock.elapsedRealtime()+TIME_INTERVAL,new );
         alarmManager.set(AlarmManager.RTC_WAKEUP,System.currentTimeMillis()+10000, "TAGE",mLightAlarmListener,null);
+        Intent intent = new Intent(this,MyService.class);
+        pi = PendingIntent.getService(MyService.this, 0, intent, 0);
+        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,System.currentTimeMillis(),10000,pi);
         try{
             PowerManager pm = (PowerManager)getSystemService(Context.POWER_SERVICE);
             wakeLock = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "TAG");
@@ -137,6 +141,7 @@ public class MyService extends Service {
         }
         if(alarmManager != null){
             alarmManager.cancel(mLightAlarmListener);
+            alarmManager.cancel(pi);
         }
         Toast.makeText(this, "执行OnDestory", Toast.LENGTH_LONG).show();
         Log.d("lizisong", "onDestroy");
@@ -151,6 +156,8 @@ public class MyService extends Service {
             } else {
                 startService(intent);
             }
+//            pi = PendingIntent.getService(MyService.this, 0, intent, 0);
+//            alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,System.currentTimeMillis(),10000,pi);
         }catch (Exception e){
 
         }
@@ -167,6 +174,8 @@ public class MyService extends Service {
 //                notificationManager.notify(0,notification);
                 startForeground(1, notification);
                 startService2();
+                alarmManager.set(AlarmManager.RTC_WAKEUP,System.currentTimeMillis()+10000, "TAGE",mLightAlarmListener,null);
+
             }catch (Exception e){
 
             }
