@@ -1,0 +1,91 @@
+ext {
+    //android开发版本配置
+    android = [
+            compileSdkVersion: 29,//构建时sdk版本
+            buildToolsVersion: "31.0.0",//build工具版本
+            applicationId    : "com.lenovo.retaildemo.release.new",//包名
+            minSdkVersion    : 19,//最小sdk版本
+            targetSdkVersion : 28,//目标sdk版本
+            versionCode      : 14,//当前版本号
+            versionName      : "1.1.2",//当前版本名
+    ]
+    //greendao配置
+    greendao = [
+            "greendao-schemaVersion": 1,//数据库版本号
+            "greendao-targetGenDir" : "",//生成数据库文件的目录 如果是空串则使用默认值
+            "greendao-daoPackage"   : "",//生成的数据库相关文件的包名 如果是空串则使用默认值
+    ]
+    //version配置
+    versions = [
+            "kotlin-version"          : "1.2.0",//框架版本
+            "support-version"         : "1.2.0",//框架版本
+            "legacy-support-version"  : "1.0.0",
+            "design-version"          : "1.2.1",//控件库版本
+            "constraintlayout-version": "2.0.1",//约束布局版本
+    ]
+    //support配置
+    androidx = [
+            'support-v4'              : "androidx.legacy:legacy-support-v4:${versions["legacy-support-version"]}",
+            'appcompat'               : "androidx.appcompat:appcompat:${versions["support-version"]}",
+            'recyclerview'            : "androidx.recyclerview:recyclerview:${versions["support-version"]}",
+            'support-v13'             : "androidx.legacy:legacy-support-v13:${versions["legacy-support-version"]}",
+            'support-fragment'        : "androidx.fragment:fragment:${versions["support-version"]}",
+            'animated-vector-drawable': "androidx.vectordrawable:vectordrawable-animated:${versions["support-version"]}",
+            'design'                  : "com.google.android.material:material:${versions["design-version"]}",
+            'constraintlayout'        : "androidx.constraintlayout:constraintlayout:${versions["constraintlayout-version"]}",
+    ]
+
+    //debug version配置
+    debug_versions = [
+            "junit-version"     : "4.12",//测试用例库版本
+            "leakcanary-version": "1.6.3",//内存泄露检测库版本
+    ]
+    //debug库
+    debug = [
+            'junit'              : "junit:junit:${debug_versions["junit-version"]}",
+            'leakcanary-android' : "com.squareup.leakcanary:leakcanary-android:${debug_versions["leakcanary-version"]}",
+            'leakcanary-fragment': "com.squareup.leakcanary:leakcanary-support-fragment:${debug_versions["leakcanary-version"]}",
+    ]
+
+    //依赖第三方配置
+    dependencies = [
+            //rxjava
+            "rxjava"                               : "io.reactivex.rxjava2:rxjava:2.2.3",
+            "rxandroid"                            : "io.reactivex.rxjava2:rxandroid:2.1.0",
+            //rx系列与View生命周期同步
+            "rxlifecycle"                          : "com.trello.rxlifecycle2:rxlifecycle:2.2.2",
+            "rxlifecycle-components"               : "com.trello.rxlifecycle2:rxlifecycle-components:2.2.2",
+            //rxbinding
+            "rxbinding"                            : "com.jakewharton.rxbinding2:rxbinding:2.1.1",
+            //rx 6.0权限请求
+            "rxpermissions"                        : "com.github.tbruyelle:rxpermissions:0.10.2",
+            //network
+            "okhttp"                               : "com.squareup.okhttp3:okhttp:3.10.0",
+            "retrofit"                             : "com.squareup.retrofit2:retrofit:2.4.0",
+            "converter-gson"                       : "com.squareup.retrofit2:converter-gson:2.4.0",
+            "adapter-rxjava"                       : "com.squareup.retrofit2:adapter-rxjava2:2.4.0",
+            //glide图片加载
+            "glide"                                : "com.github.bumptech.glide:glide:4.11.0",
+            "glide-compiler"                       : "com.github.bumptech.glide:compiler:4.11.0",
+            //json解析
+            "gson"                                 : "com.google.code.gson:gson:2.8.6",
+            //material-dialogs
+            "material-dialogs-core"                : "com.afollestad.material-dialogs:core:0.9.6.0",
+            "material-dialogs-commons"             : "com.afollestad.material-dialogs:commons:0.9.6.0",
+            //recyclerview的databinding套装
+            "bindingcollectionadapter"             : "me.tatarka.bindingcollectionadapter2:bindingcollectionadapter:4.0.0",
+            "bindingcollectionadapter-recyclerview": "me.tatarka.bindingcollectionadapter2:bindingcollectionadapter-recyclerview:4.0.0",
+            "bindingcollectionadapter-viewpager2"  : "me.tatarka.bindingcollectionadapter2:bindingcollectionadapter-viewpager2:4.0.0",
+            //Google AAC
+            "lifecycle-extensions"                 : "androidx.lifecycle:lifecycle-extensions:2.0.0",
+            "lifecycle-compiler"                   : "androidx.lifecycle:lifecycle-compiler:2.0.0",
+            //MVVMHabit
+            "MVVMHabit"                            : "com.github.goldze:MVVMHabit:4.0.0",
+            //自适应屏幕
+            "autosize"                             : "me.jessyan:autosize:1.2.0",
+            //数据库
+            "greendao"                             : "org.greenrobot:greendao:3.3.0",
+    ]
+}
+
+
